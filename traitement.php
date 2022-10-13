@@ -20,7 +20,8 @@
                 $sujet = filter_input(INPUT_POST, "sujet", FILTER_SANITIZE_SPECIAL_CHARS);
                 $jourReservation = filter_input(INPUT_POST, "jour-reservation", FILTER_SANITIZE_SPECIAL_CHARS);
                 $creneauReservation = filter_input(INPUT_POST, "creneau-reservation", FILTER_SANITIZE_SPECIAL_CHARS);
-                $heureReservation = filter_input(INPUT_POST, "creneau-heure", FILTER_SANITIZE_SPECIAL_CHARS);
+                /* Comme les options sont déjà définies, il suffit de lire l'option choisie dans select */
+                $heureReservation = $_POST['creneau-heure'];
                 
                 //Nous devons conserver chaque produit renseigné, donc les stocker esession. On décide d'abord de leur organisation au sein de la session 
                 if($nom && $prenom && $telephone && $nombrePersonne && $mail && $sujet && $jourReservation && $creneauReservation && $heureReservation){
@@ -48,7 +49,26 @@
             /* Redirection vers le formulaire, qu'il soit saisi ou non */
         header("Location:panier.php");
         break;
+        
+        case "viderPanier":
+      
+            header("Location:panier.php");
+        break;
 
+        case "augmenterNombrePersonnes":
+
+            header("Location:panier.php");
+        break;
+
+        case "baisserNombrePersonne":
+
+            header("Location:panier.php");            
+        break;
+
+        case "suppprimerReservation":  
+        
+            header("Location:panier.php");
+        break;
         }
 
   
