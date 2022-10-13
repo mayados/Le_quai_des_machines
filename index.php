@@ -334,20 +334,24 @@
                         <div id="flex-menu">           
                             <ul class="ul-acordeon">
                                 <li>
-                                    <a href="#menu1" class="button">Lundi</a>
+                                    <a href="#menu1" class="button">Jours</a>
                                     <div id="menu1" class="content menu">
-                                        <div class="entree">
-                                            <p>Entrée<br>
-                                            <p>Salade ou velouté de mâche nantaise</p>                                    
-                                        </div>
-                                        <div class="plat">
-                                            <p>Plat <br>
-                                            <p>Pavé de sandre au beurre blanc du Pays Nantais (riz ou pomme de terre)</p>                                    
-                                        </div>
-                                        <div class="dessert">
-                                            <p>Dessert</p>
-                                            <p>Fondant baulois et fleur de glace Pêche de Vigne</p>                                    
-                                        </div>
+                                    <label for="jour-select">Sélectionnez votre jour de réservation</label>
+                                        <select name="jour-reservation" id="jour-reservation">
+                                            <option value="lundi">Lundi</option>
+                                            <option value="mardi">Mardi</option>
+                                            <option value="mercredi">Mercredi</option>
+                                            <option value="jeudi">Jeudi</option>
+                                            <option value="vendredi">Vendredi</option>
+                                            <option value="samedi">Samedi</option>
+                                            <option value="dimanche">Dimanche</option>
+                                        </select>
+                                    <label for="creneau-select">Sélectionnez votre créneau</label>
+                                    <select name="creneau-reservation" id="creneau-reservation">
+                                        <option value="lundi">Midi</option>
+                                        <option value="mardi">Soir</option>
+                                    
+                                        </select>
                                     </div>  
                                 </li>
                             </ul>
