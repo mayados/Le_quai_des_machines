@@ -8,75 +8,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/panier.css">
     <title>Panier reservation</title>
 </head>
 <body>
-<div id="container-page">
-        <h1> Votre récapitulatif de commande </h1>            
-        <div id="tableau">
-            <?php 
-                    /* Si la clé "products" du tableau session n'existe pas OU si elle existe mais ne contient auncune donnée, on affiche un message */
-                    if(!isset($_SESSION['reservations']) || empty($_SESSION['reservations'])){
-                        echo "<p> Auncun produit en session...</p>";
-                    }
-                    /* Au cas où la clé existe et contient quelque chose, on affiche nos produits dans un tableau HTML */
-                    else{
-                        echo "<table id='tableau-recap'>",
-                            "<thead>",
-                                "<tr>",
-                                    "<th>Nom</th>",
-                                    "<th>Prenom</th>",
-                                    "<th>Telephone</th>",
-                                    "<th>Nombre de personnes</th>",
-                                    "<th>Adresse mail</th>",
-                                    "<th>Sujet</th>",
-                                    "<th>Jour de reservation</th>",
-                                    "<th>Creneau</th>",
-                                    "<th>Heure réservation</th>",
-                                "</tr>",
-                            "</thead>",
-                            "<tbody>";
-                        // $totalGeneral = 0;
-                        // $nombreProduits = count($_SESSION['products']); 
-                        /* Pour chaque element product du tableau products : products correspond à l'index*/
-                        foreach($_SESSION['reservations'] as $index => $reservation){
-                            $ref = $index;
-                            // $quantiteProduit = $product['qtt'];
-                            // $produit = $product['name'];
-                            echo "<tr>",
-                                    "<td>".$reservation['name']."</td>",
-                                    "<td>".$reservation['name']."</td>",
-                                    "<td>". $reservation['name'] ."</td>",
-                                    "<td>".$reservation['name'] ."</td>",
-                                    "<td>".$reservation['name'] . "</td>",
-                                    "<td>".$reservation['name'] . "</td>",
-                                "</tr>",
-
-                            // $totalGeneral += $product['total'];
+    <div id="container-page">
+            <h1> Le Quai des Machines </h1>    
+            <h3>14 Bd Léon Bureau 44200 Nantes</h3>        
+            <div id="container-reservation">
+                <?php 
+                        /* Si la clé "reservations" du tableau session n'existe pas OU si elle existe mais ne contient auncune donnée, on affiche un message */
+                        if(!isset($_SESSION['reservations']) || empty($_SESSION['reservations'])){
+                            echo "<p> Auncune réservation effectuée...</p>";
                         }
-                    //     echo    "<tr id='general'>",
-                    //                 /* Cellule fusionnée de 4 cellules = l'affichage des mots "total général" prend 4 celulles sur 5 */
-                    //                 "<td colspan=4 id='total-g'>Total général : </td>",
-                    //                 /* &nbsp; est un espace insécable */
-                    //                 "<td><strong>".number_format($totalGeneral, 2, ",", "&nbsp;")."&nbsp;€</strong></td>",
-                    //             "</tr>",
-                    //             "<tr>",
-                    //                 "<td id='nb-produits'colspan=4> Nombre de produits : </td>",
-                    //                 "<td>".$nombreProduits."</td>",
-                    //             "</tr>",
-                    //             "<tr>",
-                    //                 "<td id='supp-produits'><a href='traitement.php?action=viderPanier'>Supprimer tous les produits</a></td>",
-                    //             "</tr>",
-                            "</tbody>",
-                            "</table>";
-                    // }
-                ?>
-        </div>
-
+                        /* Au cas où la clé existe et contient quelque chose, on affiche nos produits dans un tableau HTML */
+                        else{
+                            foreach($_SESSION['reservations'] as $index => $reservation){
+                                $ref=$index;
+                                var_dump($ref);
+                                echo "<div class='reservation'>",
+                                        "<div class='donnees'>",
+                                            "<div class='jour donnee'><p>".$reservation['jourReservation'] . "</p></div>",
+                                            "<div class='personnes donnee'<p>".$reservation['nombrePersonne'] ." personne(s)</p></div>",
+                                            "<div class='creneau donnee'><p>".$reservation['creneauReservation'] . "</p></div>",
+                                            "<div class='heure donnee'><p>".$reservation['heureReservation'] . "</p></div>",
+                                        "</div>",
+                                        "<div class='menu-jour'>",
+                                            "<h4>Votre menu du jour</h4>",
+                                            "<div class='elements-menu'>",
+                                                "<h5>Entrée</h5>",
+                                                "<h5>Plat</h5>",
+                                                "<h5>Dessert</h5>",
+                                            "</div>",
+                                        "</div>",
+                                        "<a class='sup-reservation' href='#'><p>Supprimer la réservation</p></a>",
+                                    "</div>";
+                            }
+                            echo "
+                                    <p>Merci pour votre réservation !</p>
+                                    <p>Un e-mail de confirmation vous a été envoyé</p>
+                                    <a id='retour-index' href='index.php'>
+                                        <i class='fa-solid fa-rotate-left'></i>
+                                        <p>Réserver une autre table</p>
+                                    </a>";                             
+                        }
+                    ?>
+            </div>
+    
             <a id="retour-index" href="index.php">
                 <i class="fa-solid fa-rotate-left"></i>
-                <p>Retour à l'index</p>
-            </a>          
+                <p>Retourner à la page d'accueil</p>
+            </a>                
 
     </div>
 </body>
