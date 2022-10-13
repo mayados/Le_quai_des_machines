@@ -1,3 +1,47 @@
+<?php
+
+/* Il faut avoir accès au tableau $_SESSION pour connaître les plats du jour */
+session_start();
+
+/* Construire les variables pour le menu de la semaine */
+$menu1 = "Pavé de sandre au beurre blanc du Pays Nantais (riz ou pomme de terre)";
+$menu2 = "Chaudrée de palourdes";
+$menu3 = "canard de Challans plongé dans une mare de sauce au muscadet (Accompagnement légumes de saison)";
+$menu4 = "Bardatte aux herbes fraîches sur un fondu de carotte et poireau primeur";
+$menu5 = "Plateau de fruits de mer de l’Atlantique";
+$menu6 = "Saucisse au Muscadet et sa robe de crêpe au sarrasin ";
+$menu7 = "Carré de côtes de porc braisé";
+
+$entree1 = "Salade ou velouté de mâche nantaise";
+$entree2 = "Rillettes au lapin";
+$entree3 = "Grenouilles des marais à la crème";
+$entree4 = "Pâté de foie chaud";
+$entree5 = "Poires tapées au vin";
+$entree6 = "Truite fumée, crème ciboulette";
+$entree7 = "Salade de Langouille";
+
+$dessert1 = "Fondant baulois et fleur de glace Pêche de Vigne";
+$dessert2 = "Fouace perdue aux fruits rouges";
+$dessert3 = "Fouace perdue aux fruits rouges";
+$dessert4 = "Fondue de curé Nantais gratinée et variante de poires";
+$dessert5 = "Tourton du pays nantais et son Curé nantais";
+$dessert6 = "Gâteau nantais et crémeux de yaourt";
+$dessert7 = "Petit beurre sur lit de Confiture de Muroise du Pays Nantais";
+
+$menuSemaine = ['lundi'=> ['entree'=>$entree1, 'plat'=>$menu1, 'dessert'=>$dessert1],
+                'mardi'=> ['entree'=>$entree2, 'plat'=>$menu2, 'dessert'=>$dessert2], 
+                'mercredi'=> ['entree'=>$entree3, 'plat'=>$menu3, 'dessert'=>$dessert3], 
+                'jeudi'=> ['entree'=>$entree4, 'plat'=>$menu4, 'dessert'=>$dessert4], 
+                'vendredi' => ['entree'=>$entree5, 'plat'=>$menu5, 'dessert'=>$dessert5], 
+                'samedi' => ['entree'=>$entree6, 'plat'=>$menu6, 'dessert'=>$dessert6],
+                'dimanche' => ['entree'=>$entree7, 'plat'=>$menu7, 'dessert'=>$dessert7]
+];
+
+/* Il faut toujours mettre les éléments que l'on veut mettre dans $_SESSION dans une autre variable car il faut pouvoir l'appeler */
+$_SESSION['menuSemaine'][] = $menuSemaine;
+// var_dump($_SESSION['menuSemaine']);
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -102,34 +146,34 @@
                             <li>
                                 <a href="#menu1" class="button">Lundi</a>
                                 <div id="menu1" class="content menu">
-                                    <div class="entree">
+                                    <div class='entree'>
                                         <p>Entrée<br>
-                                        <p>Salade ou velouté de mâche nantaise</p>                                    
+                                        <p><?php echo $entree1; ?></p>                                    
                                     </div>
-                                    <div class="plat">
+                                    <div class='plat'>
                                         <p>Plat <br>
-                                        <p>Pavé de sandre au beurre blanc du Pays Nantais (riz ou pomme de terre)</p>                                    
+                                        <p><?php echo $menu1; ?></p>                                    
                                     </div>
-                                    <div class="dessert">
+                                    <div class='dessert'>
                                         <p>Dessert</p>
-                                        <p>Fondant baulois et fleur de glace Pêche de Vigne</p>                                    
+                                        <p><?php echo $dessert1; ?></p>                                    
                                     </div>
                                 </div>  
                             </li>
                             <li>
                                 <a href="#menu2" class="button">Mardi</a>
                                 <div id="menu2" class="content menu">
-                                    <div class="entree">
+                                    <div class='entree'>
                                         <p>Entrée<br>
-                                        <p>Rillettes au lapin</p>                                    
+                                        <p><?php echo $entree2; ?></p>                                    
                                     </div>
-                                    <div class="plat">
+                                    <div class='plat'>
                                         <p>Plat</p>
-                                        <p>Chaudrée de palourdes</p>                                    
+                                        <p><?php echo $menu2; ?></p>                                    
                                     </div>
-                                    <div class="dessert">
+                                    <div class='dessert'>
                                         <p>Dessert</p>
-                                        <p>Fouace perdue aux fruits rouges</p>                                    
+                                        <p><?php echo $dessert2; ?></p>                                    
                                     </div>
                                 </div>
                             </li>
@@ -138,15 +182,15 @@
                                 <div id="menu3" class="content menu">
                                     <div class="entree">
                                         <p>Entrée</p>
-                                        <p>Grenouilles des marais à la crème</p>                                    
+                                        <p><?php echo $entree3; ?></p>                                    
                                     </div>
                                     <div class="plat">
                                         <p>Plat</p>
-                                        <p>canard de Challans plongé dans une mare de sauce au muscadet (Accompagnement légumes de saison)</p>                                    
+                                        <p><?php echo $menu3; ?></p>                                    
                                     </div>
                                     <div class="dessert">
                                         <p>Dessert</p>
-                                        <p>Fouace perdue aux fruits rouges</p>                                    
+                                        <p><?php echo $dessert3; ?></p>                                    
                                     </div>
                                 </div> 
                             </li>
@@ -155,15 +199,15 @@
                                 <div id="menu4" class="content menu">
                                     <div class="entree">
                                         <p>Entrée</p>
-                                        <p>Pâté de foie chaud</p>                                    
+                                        <p><?php echo $entree4; ?></p>                                    
                                     </div>
                                     <div class="plat">
                                         <p>Plat</p>
-                                        <p>Bardatte aux herbes fraîches sur un fondu de carotte et poireau primeur</p>                                    
+                                        <p><?php echo $menu4; ?></p>                                    
                                     </div>
                                     <div class="dessert">
                                         <p>Dessert</p>
-                                        <p>Fondue de curé Nantais gratinée et variante de poires</p>                                      
+                                        <p><?php echo $dessert4; ?></p>                                      
                                     </div>
                                 </div> 
                             </li>
@@ -172,15 +216,15 @@
                                 <div id="menu4" class="content menu">
                                     <div class="entree">
                                         <p>Entrée</p>
-                                        <p>Poires tapées au vin <p>                                    
+                                        <p><?php echo $entree5; ?><p>                                    
                                     </div>
                                     <div class="plat">
                                         <p>Plat</p>
-                                        <p>Plateau de fruits de mer de l’Atlantique</p>                                    
+                                        <p><?php echo $menu5; ?></p>                                    
                                     </div>
                                     <div class="dessert">
                                         <p>Dessert</p>
-                                        <p>Tourton du pays nantais et son Curé nantais</p>                                    
+                                        <p><?php echo $dessert5; ?></p>                                    
                                     </div>
                                 </div> 
                             </li>
@@ -189,15 +233,15 @@
                                 <div id="menu4" class="content menu">
                                     <div class="entree">
                                         <p>Entrée</p>
-                                        <p>Truite fumée, crème ciboulette</p>                                    
+                                        <p><?php echo $entree6; ?></p>                                    
                                     </div>
                                     <div class="plat">
                                         <p>Plat</p>
-                                        <p>Saucisse au Muscadet et sa robe de crêpe au sarrasin </p>                                    
+                                        <p><?php echo $menu6; ?></p>                                    
                                     </div>
                                     <div class="dessert">
                                         <p>Dessert</p>
-                                        <p>Gâteau nantais et crémeux de yaourt</p>                                    
+                                        <p><?php echo $dessert6; ?></p>                                    
                                     </div>
                                 </div> 
                             </li>
@@ -206,15 +250,15 @@
                                 <div id="menu4" class="content menu">
                                     <div class="entree">
                                         <p>Entrée</p>
-                                        <p>Salade de Langouille</p>                                    
+                                        <p><?php echo $entree7; ?></p>                                    
                                     </div>
                                     <div class="plat">
                                         <p>Plat</p>
-                                        <p>Carré de côtes de porc braisé</p>                                    
+                                        <p><?php echo $menu7; ?></p>                                    
                                     </div>
                                     <div class="dessert">
                                         <p>Dessert</p>
-                                        <p>Petit beurre sur lit de Confiture de Muroise du Pays Nantais</p>                                
+                                        <p><?php echo $dessert7; ?></p>                                
                                     </div>
 
                                 </div> 
