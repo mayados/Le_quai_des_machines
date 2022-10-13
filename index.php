@@ -320,7 +320,7 @@
                     </iframe>
                 </div>
                 <div class="contact-container">
-                    <form action="index.html">
+                    <form action="index.html" method="POST">
 
                         <label for="nom">Nom</label>
                         <input type="text" id="nom" name="nom" placeholder="Votre nom">
@@ -330,6 +330,28 @@
 
                         <label for="telephone">Numéro de téléphone</label>
                         <input type="text" id="telephone" name="telephone" placeholder="Numéro de téléphone">
+
+                        <div id="flex-menu">           
+                            <ul class="ul-acordeon">
+                                <li>
+                                    <a href="#menu1" class="button">Lundi</a>
+                                    <div id="menu1" class="content menu">
+                                        <div class="entree">
+                                            <p>Entrée<br>
+                                            <p>Salade ou velouté de mâche nantaise</p>                                    
+                                        </div>
+                                        <div class="plat">
+                                            <p>Plat <br>
+                                            <p>Pavé de sandre au beurre blanc du Pays Nantais (riz ou pomme de terre)</p>                                    
+                                        </div>
+                                        <div class="dessert">
+                                            <p>Dessert</p>
+                                            <p>Fondant baulois et fleur de glace Pêche de Vigne</p>                                    
+                                        </div>
+                                    </div>  
+                                </li>
+                            </ul>
+                        </div>    
 
                         <label for="telephone">Adresse mail</label>
                         <input type="text" id="telephone" name="telephone" placeholder="votre@adresse.mail">
