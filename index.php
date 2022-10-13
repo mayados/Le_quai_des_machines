@@ -1,3 +1,20 @@
+<?php
+
+/* Il faut avoir accès au tableau $_SESSION pour connaître les plats du jour */
+session_start();
+
+/* Construire les variables pour le menu de la semaine */
+$menu1 = "Pavé de sandre au beurre blanc du Pays Nantais (riz ou pomme de terre)";
+$menu2 = "Chaudrée de palourdes";
+$menu3 = "canard de Challans plongé dans une mare de sauce au muscadet (Accompagnement légumes de saison)";
+$menu4 = "Bardatte aux herbes fraîches sur un fondu de carotte et poireau primeur";
+$menu5 = "Plateau de fruits de mer de l’Atlantique";
+$menu6 = "Saucisse au Muscadet et sa robe de crêpe au sarrasin ";
+$menu7 = "Carré de côtes de porc braisé";
+
+$_SESSION['lundi'=> $menu1, 'mardi'=>$menu2, 'mercredi'=>$menu3, 'jeudi'=>$menu4, 'vendredi'];
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -102,15 +119,15 @@
                             <li>
                                 <a href="#menu1" class="button">Lundi</a>
                                 <div id="menu1" class="content menu">
-                                    <div class="entree">
+                                    <div class='entree'>
                                         <p>Entrée<br>
                                         <p>Salade ou velouté de mâche nantaise</p>                                    
                                     </div>
-                                    <div class="plat">
+                                    <div class='plat'>
                                         <p>Plat <br>
                                         <p>Pavé de sandre au beurre blanc du Pays Nantais (riz ou pomme de terre)</p>                                    
                                     </div>
-                                    <div class="dessert">
+                                    <div class='dessert'>
                                         <p>Dessert</p>
                                         <p>Fondant baulois et fleur de glace Pêche de Vigne</p>                                    
                                     </div>
@@ -119,15 +136,15 @@
                             <li>
                                 <a href="#menu2" class="button">Mardi</a>
                                 <div id="menu2" class="content menu">
-                                    <div class="entree">
+                                    <div class='entree'>
                                         <p>Entrée<br>
                                         <p>Rillettes au lapin</p>                                    
                                     </div>
-                                    <div class="plat">
+                                    <div class='plat'>
                                         <p>Plat</p>
                                         <p>Chaudrée de palourdes</p>                                    
                                     </div>
-                                    <div class="dessert">
+                                    <div class='dessert'>
                                         <p>Dessert</p>
                                         <p>Fouace perdue aux fruits rouges</p>                                    
                                     </div>
