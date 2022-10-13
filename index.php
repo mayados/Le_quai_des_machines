@@ -320,7 +320,7 @@
                     </iframe>
                 </div>
                 <div class="contact-container">
-                    <form action="index.html" method="POST">
+                    <form action="traitement.php" method="POST">
 
                         <label for="nom">Nom</label>
                         <input type="text" id="nom" name="nom" placeholder="Votre nom">
@@ -338,19 +338,41 @@
                                     <div id="menu1" class="content menu">
                                     <label for="jour-select">Sélectionnez votre jour de réservation</label>
                                         <select name="jour-reservation" id="jour-reservation">
-                                            <option value="lundi">Lundi</option>
-                                            <option value="mardi">Mardi</option>
-                                            <option value="mercredi">Mercredi</option>
-                                            <option value="jeudi">Jeudi</option>
-                                            <option value="vendredi">Vendredi</option>
-                                            <option value="samedi">Samedi</option>
-                                            <option value="dimanche">Dimanche</option>
+                                            <option value="lundi" name="lundi">Lundi</option>
+                                            <option value="mardi" name="mardi">Mardi</option>
+                                            <option value="mercredi" name="mercredi">Mercredi</option>
+                                            <option value="jeudi" name="jeudi">Jeudi</option>
+                                            <option value="vendredi" name="vendredi">Vendredi</option>
+                                            <option value="samedi" name="samedi">Samedi</option>
+                                            <option value="dimanche" name="dimanche">Dimanche</option>
                                         </select>
                                     <label for="creneau-select">Sélectionnez votre créneau</label>
-                                    <select name="creneau-reservation" id="creneau-reservation">
-                                        <option value="lundi">Midi</option>
-                                        <option value="mardi">Soir</option>
-                                    
+                                        <select 
+                                        onchange="toggleCreneaux()"
+                                        name="creneau-reservation" id="creneau-reservation" >
+                                        <option class="midi" value="midi" id="creneau-heure-midi">Midi</option>
+                                        <option class="soir" value="soir" id="creneau-heure-soir">Soir</option>
+                                        </select>
+                                        
+                                    <label for="creneau-select">Heure choisie :</label>
+                                        <select class="heures-midi" name="creneau-heure" id="H-midi">
+                                            <option value="heure">11h45</option>
+                                            <option value="heure">12h00</option>
+                                            <option value="heure">12h30</option>
+                                            <option value="heure">13h00</option>
+                                            <option value="heure">13h30</option>
+                                            <option value="heure">14h00</option>
+                                        </select>
+                                        <select class="hidden heures-soir" name="creneau-heure" id="H-soir">
+                                            <option value="heure">18h00</option>
+                                            <option value="heure">18h30</option>
+                                            <option value="heure">19h00</option>
+                                            <option value="heure">19h30</option>
+                                            <option value="heure">20h00</option>
+                                            <option value="heure">20h30</option>
+                                            <option value="heure">21h00</option>
+                                            <option value="heure">21h30</option>
+                                            <option value="heure">22h00</option>
                                         </select>
                                     </div>  
                                 </li>
