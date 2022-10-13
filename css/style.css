@@ -11,7 +11,7 @@
 :root {
     --bleu: #091729;
     --rose: #e40034;
-    --blanc: red;
+    --blanc: white;
     --noir: black;
     }
 
@@ -753,7 +753,6 @@ footer li a i:hover {
 
     .ul-acordeon {
         min-width: 200px;
-        /* max-width: à modifier ; */ 
     }
 
     #flex-menu {
@@ -885,7 +884,7 @@ footer li a i:hover {
         transform:translateY(12px)
       }
 
-      /*Cette class show-nav a été ajoutée à partir du code JS, elle permet de réafficher les éléments (placés auparavant dans la partie non visible de l'écran du côté droit*/
+      /*Cette class show-nav a été ajoutée à partir du code JS, elle permet de réafficher les éléments (placés auparavant dans la partie non visible de l'écran en haut*/
       .show-nav #items-menu { 
         margin-top: 15%;
         /*Il faut à nouveau ajouter la couleur de fond car sinon les éléments sortent du flux (=ils sortent du menu)*/
@@ -895,7 +894,7 @@ footer li a i:hover {
         height: 30vh;
         /*On remet les éléments à leur place d'origine*/
         transform: translateX(0);
-        transition: 2s;        
+        transition: 2s;     
       } 
 
       .show-nav .burger {
