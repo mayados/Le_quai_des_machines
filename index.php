@@ -39,7 +39,10 @@ $menuSemaine = ['lundi'=> ['entree'=>$entree1, 'plat'=>$menu1, 'dessert'=>$desse
 
 /* Il faut toujours mettre les éléments que l'on veut mettre dans $_SESSION dans une autre variable car il faut pouvoir l'appeler */
 $_SESSION['menuSemaine'][] = $menuSemaine;
-
+/* Affiche les menus de la semaine */
+// foreach($_SESSION['menuSemaine'] as $index => $jour){
+//     var_dump($jour);
+// }
 ?>
 <!DOCTYPE html>
 <html lang="fr">
