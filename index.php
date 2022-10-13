@@ -363,7 +363,7 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                     </iframe>
                 </div>
                 <div class="contact-container">
-                    <form action="traitement.php" method="POST">
+                    <form action="traitement.php?action=ajouterProduit" method="post">
 
                         <label for="nom">Nom</label>
                         <input type="text" id="nom" name="nom" placeholder="Votre nom">
@@ -372,7 +372,10 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                         <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
 
                         <label for="telephone">Numéro de téléphone</label>
-                        <input type="text" id="telephone" name="telephone" placeholder="Numéro de téléphone">
+                        <input type="number" id="telephone" name="telephone" placeholder="Numéro de téléphone">
+
+                        <label for="nombrePersonne">Nombre de personnes</label>
+                        <input type="number" id="nombrePersonne" name="nombrePersonne" placeholder="Nombre de personnes">
 
                         <div id="flex-menu">           
                             <ul class="ul-acordeon">
@@ -399,36 +402,36 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                                         
                                     <label for="creneau-select">Heure choisie :</label>
                                         <select class="heures-midi" name="creneau-heure" id="H-midi">
-                                            <option value="heure">11h45</option>
-                                            <option value="heure">12h00</option>
-                                            <option value="heure">12h30</option>
-                                            <option value="heure">13h00</option>
-                                            <option value="heure">13h30</option>
-                                            <option value="heure">14h00</option>
+                                            <option value="11h45">11h45</option>
+                                            <option value="12h00">12h00</option>
+                                            <option value="12h30">12h30</option>
+                                            <option value="13h00">13h00</option>
+                                            <option value="13h30">13h30</option>
+                                            <option value="14h00">14h00</option>
                                         </select>
                                         <select class="hidden heures-soir" name="creneau-heure" id="H-soir">
-                                            <option value="heure">18h00</option>
-                                            <option value="heure">18h30</option>
-                                            <option value="heure">19h00</option>
-                                            <option value="heure">19h30</option>
-                                            <option value="heure">20h00</option>
-                                            <option value="heure">20h30</option>
-                                            <option value="heure">21h00</option>
-                                            <option value="heure">21h30</option>
-                                            <option value="heure">22h00</option>
+                                            <option value="18h00">18h00</option>
+                                            <option value="18h30">18h30</option>
+                                            <option value="19h00">19h00</option>
+                                            <option value="19h30">19h30</option>
+                                            <option value="20h00">20h00</option>
+                                            <option value="20h30">20h30</option>
+                                            <option value="21h00">21h00</option>
+                                            <option value="21h30">21h30</option>
+                                            <option value="22h00">22h00</option>
                                         </select>
                                     </div>  
                                 </li>
                             </ul>
                         </div>    
 
-                        <label for="telephone">Adresse mail</label>
-                        <input type="text" id="telephone" name="telephone" placeholder="votre@adresse.mail">
+                        <label for="mail">Adresse mail</label>
+                        <input type="text" id="mail" name="mail" placeholder="votre@adresse.mail">
 
                         <label for="sujet">Sujet</label>
                         <textarea id="sujet" name="sujet" placeholder="Ecrivez quelque chose..."></textarea>
 
-                        <input type="submit" value="Envoyer">
+                        <input name="submit" type="submit" value="Envoyer">
 
                     </form>
                 </div>
