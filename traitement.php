@@ -39,16 +39,14 @@
                 
                     /* On enregistre le produit en session */
                     /* On appelle le tableau session fournit par php, on y indique un clé "products" */
-                    $_SESSION['reservations'][] = $reservation;
-                    var_dump($_SESSION['reservations']);
-                    
-                    
+                    $_SESSION['reservations'][] = $reservation;                    
                 }
+                
             }
 
 
             /* Redirection vers le formulaire, qu'il soit saisi ou non */
-            // header("Location:index.php");
+        header("Location:panier.php");
         break;
 
         }
