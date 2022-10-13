@@ -11,7 +11,7 @@
 :root {
     --bleu: #091729;
     --rose: #e40034;
-    --blanc: green;
+    --blanc: #FFF;
     --noir: black;
     }
 
@@ -753,7 +753,7 @@ footer li a i:hover {
 
     .ul-acordeon {
         min-width: 200px;
-        max-width: ;
+        /* max-width: à modifier ; */ 
     }
 
     #flex-menu {
