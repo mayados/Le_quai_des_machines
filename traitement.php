@@ -61,8 +61,12 @@
         break;
 
         case "baisserNombrePersonne":
-            $_SESSION['reservations'][$ref]["nombrePersonne"]--;
-            header("Location:panier.php");         
+            if($_SESSION['reservations'][$ref]["nombrePersonne"] > 1){
+                $_SESSION['reservations'][$ref]["nombrePersonne"]--;
+            }else {
+                $_SESSION['message'] ="<div id='nb-personnes'>Le nombre de personnes doit être supérieur à 0</div>" ;       
+            }  
+            header("Location:panier.php");                 
         break;
 
         case "augmenterNombrePersonnes":
