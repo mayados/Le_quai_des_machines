@@ -66,7 +66,10 @@
         break;
 
         case "baisserNombrePersonne":
-
+            var_dump($_SESSION["reservations"]["nombrePersonne"]--);
+            if($_SESSION["reservations"]["nombrePersonne"] == 0) {
+                echo "Merci d'entrer un nombre supérieur à 0";
+            }
             header("Location:panier.php");            
         break;
 

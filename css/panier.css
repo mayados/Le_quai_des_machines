@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,7 +11,7 @@ a {
 
 #container-page {
     padding-top: 2%;
-    background-image: url("../img/tables.jpg"); 
+    background-image: url("../img/tables.jpg");
     background-position: center;
     background-repeat: no-repeat;
     /* L'image s'adapte pour couvrir son container */
@@ -22,12 +22,13 @@ a {
     color: white;
 }
 
-h1,h3{
+h1,
+h3 {
     color: white;
     text-shadow: 1px 1px black;
 }
 
-                        /********** CONTAINER PRINCIPAL POUR TOUTES LES RESERVATIONS***********/
+/********** CONTAINER PRINCIPAL POUR TOUTES LES RESERVATIONS***********/
 
 #container-reservation {
     margin: 0 auto;
@@ -36,7 +37,7 @@ h1,h3{
     position: relative;
 }
 
-                        /************CONTAINER  POUR CHAQUE RESERVATION ****************/
+/************CONTAINER  POUR CHAQUE RESERVATION ****************/
 
 .reservation {
     background-color: rgba(255, 255, 255, 0.4);
@@ -52,50 +53,52 @@ h1,h3{
     border-radius: 50px;
 }
 
-                        /************** DIV DONNEES*******************/
+/************** DIV DONNEES*******************/
 
 .donnees {
     display: flex;
     gap: 2px;
 }
 
-.donnee{
-    background-color: rgb(231, 4, 57, 0.8);   
-    text-align: center; 
+.donnee {
+    background-color: rgb(231, 4, 57, 0.8);
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.donnee:hover{
+.donnee:hover {
     background-color: rgb(196, 2, 47);
 }
 
-.jour, .heure {
-    width: 90px;
-    height: 30px;
+.jour,
+.heure {
+    width: 150px;
+    height: 50px;
 }
 
-.personnes, .creneau{
+.personnes,
+.creneau {
     width: 110px;
     height: 30px;
 }
 
-.jour{
+.jour {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.heure{
+.heure {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 
 
-                                    /************** DIV MENU-JOUR ****************/
+/************** DIV MENU-JOUR ****************/
 
-.menu-jour{
+.menu-jour {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -110,7 +113,7 @@ h1,h3{
     gap: 10px;
 }
 
-.sup-reservation{
+.sup-reservation {
     position: absolute;
     bottom: 20px;
     width: 30%;

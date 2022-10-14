@@ -30,9 +30,9 @@
                                 echo "<div class='reservation'>",
                                             "<div class='personnes donnee'<p>".$reservation['jourReservation'] ."</p></div>",
                                             "<div class='donnees'>",
-                                            "<div class='jour donnee'><p><i class='fa-solid fa-minus'></i></a>" 
+                                            "<div class='jour donnee'><a href='traitement.php?action=baisserNombrePersonne'><i class='fa-solid fa-minus'></i></a>" 
                                             . $reservation['nombrePersonne'] .
-                                            "<i class='fa-solid fa-plus'></i>personne(s)</p></div>",
+                                            "<i class='fa-solid fa-plus'></i><p>personne(s)</p></div>",
                                             "<div class='creneau donnee'><p>".$reservation['creneauReservation'] . "</p></div>",
                                             "<div class='heure donnee'><p>".$reservation['heureReservation'] . "</p></div>",
                                         "</div>",
