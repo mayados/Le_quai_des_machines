@@ -93,7 +93,9 @@ if(this.selectedIndex == 0) {
   } else if(this.selectedIndex == 1) {
   AfficherCreneau()
   }
+  console.log('lol');
 }
+
 
 // soir.addEventListener("click", AfficherCreneau());
 //soir.addEventListener("click", AfficherCreneau());

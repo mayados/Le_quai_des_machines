@@ -430,9 +430,8 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                                             <option value="dimanche" name="dimanche">Dimanche</option>
                                         </select>
                                     <label for="creneau-select">Sélectionnez votre créneau</label>
-                                        <select 
-                                        onchange="toggleCreneaux()"
-                                        name="creneau-reservation" id="creneau-reservation" >
+                                        <select
+                                        onclick="toggleCreneaux()" name="creneau-reservation" id="creneau-reservation" >
                                         <option class="midi" value="midi" id="creneau-heure-midi">Midi</option>
                                         <option class="soir" value="soir" id="creneau-heure-soir">Soir</option>
                                         </select>
@@ -491,6 +490,6 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
             <a href="#menu-navigation" onclick="topFunction()" id="myScroll"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
         </div>           
     </div>
-        <script src ="script.js"></script>
+    <script src ="./script.js"></script>
 </body>
 </html>

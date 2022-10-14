@@ -13,7 +13,7 @@
     --rose: #e40034;
     --blanc: white;
     --noir: black;
-    }
+}
 
 a {
     text-decoration: none;
@@ -42,7 +42,7 @@ h2 {
 }
 
 
-                                                /*********** DARK MODE ************/
+/*********** DARK MODE ************/
 
 
 
@@ -53,12 +53,12 @@ h2 {
 .checkbox {
     opacity: 0;
     position: absolute;
-  }
-  
-  #label-darkmode {
+}
+
+#label-darkmode {
     width: 50px;
     height: 26px;
-    background-color:rgb(243, 238, 238);
+    background-color: rgb(243, 238, 238);
     display: flex;
     border-radius: 50px;
     border: 1px solid black;
@@ -67,9 +67,9 @@ h2 {
     padding: 5px;
     position: relative;
     transform: scale(1.5);
-  }
-  
-  .ball {
+}
+
+.ball {
     width: 20px;
     height: 20px;
     background-color: black;
@@ -78,22 +78,22 @@ h2 {
     left: 2px;
     border-radius: 50%;
     transition: transform 0.2s linear;
-  }
-  
-  /*  target the elemenent after the label*/
-  .checkbox:checked + #label-darkmode .ball{
-    transform: translateX(24px);
-  }
-  
-  .fa-moon {
-    color: var(--bleu);
-  }
-  
-  .fa-sun {
-    color: yellow;
-  }
+}
 
-.ball:hover{
+/*  target the elemenent after the label*/
+.checkbox:checked+#label-darkmode .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: var(--bleu);
+}
+
+.fa-sun {
+    color: yellow;
+}
+
+.ball:hover {
     cursor: pointer;
 }
 
@@ -103,7 +103,7 @@ body.dark {
     background-color: var(--noir);
 }
 
-.dark h1{
+.dark h1 {
     color: var(--blanc);
 }
 
@@ -111,27 +111,29 @@ body.dark {
     background-color: rgb(128, 128, 128, 0.9);
 }
 
-.dark header a, .dark header span, .dark #formulaire  {
+.dark header a,
+.dark header span,
+.dark #formulaire {
     color: var(--blanc);
 }
 
 
 /*Pour changer la couleur de la flèche dynamique*/
 .dark #fleche:before,
-.dark #fleche:after  {
+.dark #fleche:after {
     background: var(--blanc);
 }
 
 
-                                                /************* HEADER ********/
+/************* HEADER ********/
 
 
 
 .flex {
     display: flex;
 }
-                                    
-header li a{
+
+header li a {
     list-style-type: none;
     color: black;
 }
@@ -140,20 +142,20 @@ header li a{
 .barre {
     font-size: 20px;
 }
-                                    
+
 header {
     background-color: rgb(255, 255, 255, 0.8);
-    width: 100%;       
+    width: 100%;
     top: 0;
     left: 0;
-    position: fixed; 
+    position: fixed;
     /*Pour que le menu soit toujours au-dessus des autres éléments*/
     z-index: 1;
     min-height: 6vh;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
     font-weight: 500;
 }
-        
+
 
 #menu-navigation {
     height: 100%;
@@ -161,9 +163,9 @@ header {
     justify-content: space-between;
 }
 
-                                    
-#img-logo {      
-    padding-left: 5%;                            
+
+#img-logo {
+    padding-left: 5%;
     height: 50px;
 }
 
@@ -171,24 +173,25 @@ header {
     margin: 0 auto;
     padding-left: 2px;
     gap: 10px;
-}                          
-                                   
+}
+
 .item-menu:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
-                                                                /**** Main page ****/
+
+/**** Main page ****/
 
 .bg-accueil {
     position: relative;
-    background-image: url("./img/restaurant-accueil.png");
+    background-image: url("/img/restaurant-accueil.png");
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 .bg-accueil h1 {
@@ -203,7 +206,7 @@ h1 {
     color: #050d18;
 }
 
-                                                            /*Menu burger*/
+/*Menu burger*/
 
 
 /* De base, le menu burger est désactivé, car il doit s'afficher à partir de la partie mobile*/
@@ -214,14 +217,14 @@ h1 {
 
 
 
-                                                     /*********** FLECHE ************/
+/*********** FLECHE ************/
 
 .arrow_container {
     width: 24px;
     height: 24px;
     margin: 0px auto;
 }
-                                                                    
+
 #fleche {
     width: 50px;
     height: 15px;
@@ -234,50 +237,53 @@ h1 {
     color: var(--bleu);
 }
 
-                                                                                
+
 #fleche:before,
 #fleche:after {
-content: ' ';
-position: absolute;
-top: 0;
-height: 100%;
-width: 50%;
-background: var(--bleu);
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: var(--bleu);
 }
 
 #fleche:before {
-left: 0;
-transform: skew(0deg, 30deg);
+    left: 0;
+    transform: skew(0deg, 30deg);
 
 }
 
 #fleche:after {
-right: 0;
-transform: skew(0deg, -30deg);
+    right: 0;
+    transform: skew(0deg, -30deg);
 }
 
 @keyframes moveToBottom {
     25% {
-    opacity: 1;
-    
+        opacity: 1;
+
     }
+
     33% {
-    opacity: 1;
-    transform: translateY(30px);
+        opacity: 1;
+        transform: translateY(30px);
     }
+
     67% {
-    opacity: 1;
-    transform: translateY(40px);
+        opacity: 1;
+        transform: translateY(40px);
     }
+
     100% {
-    opacity: 0;
-    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
     }
 }
-                                                                    
 
 
-                                                                    /******* GALERIE ********/
+
+/******* GALERIE ********/
 
 #gallery {
     display: flex;
@@ -287,53 +293,53 @@ transform: skew(0deg, -30deg);
     background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10h10v10H0V10zM10 0h10v10H10V0z' fill='%239C92AC' fill-opacity='0.17' fill-rule='evenodd'/%3E%3C/svg%3E");
     min-height: 100vh;
 }
-                                                                    
+
 .gallery-container {
     flex-wrap: wrap;
     margin-left: 15%;
     margin-right: 15%;
- }
-                                                                    
+}
+
 .column img {
     display: block;
     max-width: 100%;
     max-height: 250px;
     object-fit: cover;
 }
-                                                                    
+
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
-                                                                    
+
 .column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
 }
-                                                                    
+
 .column img {
     margin: 7% 0%;
     width: 100%;
     transition: transform .60s;
 }
-                                                                    
+
 .column img {
     height: 250px;
     min-width: auto;
 }
-                                                                    
+
 .column img:hover {
     transform: scale(1.12);
-                                                                    
+
 }
-                                                                    
+
 .dessert {
     height: 100%;
 }
-                                                                    
-                                                                    
+
+
 @media screen and (max-width: 800px) {
 
     .column {
@@ -341,29 +347,29 @@ transform: skew(0deg, -30deg);
         max-width: 50%;
     }
 }
-                                                                    
+
 @media screen and (max-width: 600px) {
-.column {
-    flex: 100%;
-    max-width: 100%;
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
-}
 
 
 
 
-                                        /**** MENU PLATS RESTAURANT ****/
+/**** MENU PLATS RESTAURANT ****/
 /* MENU ACORDEON */
 #menu {
-    background:#091729 ;
+    background: #091729;
 }
 
 #title-menu {
-    background: var(--bleu) ;
-    color: #e40034;    
-    text-align: center;    
+    background: var(--bleu);
+    color: #e40034;
+    text-align: center;
 }
-    
+
 
 .ul-acordeon {
     display: flex;
@@ -383,15 +389,17 @@ li .button {
     background-color: #e40034;
     color: #000;
     text-decoration: none;
-    min-width: 700px;  
+    min-width: 700px;
 }
+
 li .content {
     display: none;
     padding: 20px;
-    border-top: 1px solid #ddd; 
+    border-top: 1px solid #ddd;
     text-align: center;
 }
-#menu > ul > li > a {
+
+#menu>ul>li>a {
     color: white;
 }
 
@@ -405,17 +413,18 @@ li.on .content {
 }
 
 
-#menu, .accordeon {
-padding-top: 3%;    
+#menu,
+.accordeon {
+    padding-top: 3%;
 }
-    
+
 
 #menu h2 {
-    color: #e40034;    
-    text-align: center;    
+    color: #e40034;
+    text-align: center;
 }
-    
-.menu p{
+
+.menu p {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -423,23 +432,24 @@ padding-top: 3%;
     margin: 5px;
     padding: 15px;
 }
-                                                                    
+
 
 #flex-menu {
-display: flex;  
-flex-wrap: wrap;
-justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 
 /**** TELECHARGEMENT MENU ****/
-                                                                    
-#download-pdf{
+
+#download-pdf {
     margin: 5% 0;
 }
-                                                                    
-                                                                    
-#download-pdf a:link, #download-pdf a:visited {
+
+
+#download-pdf a:link,
+#download-pdf a:visited {
     background-color: white;
     color: #e40034;
     border: 2px solid white;
@@ -448,50 +458,51 @@ justify-content: space-around;
     text-decoration: none;
     display: inline-block;
 }
-                                                                      
+
 /* "a:active" doaprès "a:hover" */
-#download-pdf a:hover, #download-pdf a:active {
+#download-pdf a:hover,
+#download-pdf a:active {
     background-color: #e40034;
     color: white;
 }
 
 
-                                        /************ VIDEO YOUTUBE*************/
-.video{
-    margin: 100px 0; 
+/************ VIDEO YOUTUBE*************/
+.video {
+    margin: 100px 0;
 }
 
 
 
 
 
-                                           /******************** SECTION EVENEMENTS *********************/
+/******************** SECTION EVENEMENTS *********************/
 
 #evenements {
-background: url('../img/section_events_fond2.jpg') no-repeat ;
-background-size: 100% 100%;
-min-height: 100vh;
-background-position: 50%;     
-display: flex; 
-flex-direction: column;
-color: white;
-align-items: center;
-justify-content: center;
-flex-wrap: nowrap;
-gap: 100px;
+    background: url('../img/section_events_fond2.jpg') no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 100px;
 }
-                                      
+
 #evenements h2 {
-    margin-top: 5vh;   
-    text-align: center; 
+    margin-top: 5vh;
+    text-align: center;
 }
-                                        
+
 .titre {
     font-size: 1.4rem;
     font-weight: 300;
     text-align: center;
 }
-                                        
+
 #container-encarts {
     width: 90%;
     display: flex;
@@ -500,7 +511,7 @@ gap: 100px;
     justify-content: space-around;
     padding: 2% 0;
 }
-                                        
+
 .encart {
     position: relative;
     background-color: var(--bleu);
@@ -514,7 +525,7 @@ gap: 100px;
     border-top-right-radius: 100px;
     transition: 2s;
 }
-                                        
+
 .encart-header {
     width: 300px;
     overflow: hidden;
@@ -533,7 +544,7 @@ gap: 100px;
     gap: 15px;
     max-height: 220px;
 }
-                                        
+
 .encart-header img {
     width: 100%;
     height: 200px;
@@ -541,15 +552,15 @@ gap: 100px;
     border-top-right-radius: 100px;
     object-fit: cover;
 }
-                                        
+
 .descriptif {
     text-align: justify;
     font-weight: 200;
 }
-                                        
-                                        
-              /************* SURVOL EVENEMENTS **************/
-                                        
+
+
+/************* SURVOL EVENEMENTS **************/
+
 .encart:hover {
     transform: scale(1.05);
     cursor: pointer;
@@ -564,38 +575,40 @@ gap: 100px;
 
 
 
-                                                            /****** FORMULAIRE DE CONTACT *******/
+/****** FORMULAIRE DE CONTACT *******/
 
 #formulaire {
     background-image: url('/img/elephant.png');
     background-repeat: no-repeat;
     background-size: cover;
-                                                             
+
 }
-                                                             
+
 .formulaire-container {
     display: flex;
     justify-content: space-around;
     margin: 0% 10%;
 }
-                                                             
-.google-iframe, .contact-container {
+
+.google-iframe,
+.contact-container {
     margin: 5% 0%;
 }
-                                                             
+
 .google-iframe {
     width: 40%;
 }
-                                                             
-                                                             
+
+
 .contact-container {
     width: 50%;
 }
-                                                             
-input[type=text], 
+
+input[type=text],
 input[type=number],
 input[type=email],
-select, textarea {
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -603,11 +616,11 @@ select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
 }
-                                                             
+
 label {
     font-weight: 700;
 }
-                                                             
+
 input[type=submit] {
     background-color: var(--bleu);
     color: white;
@@ -617,44 +630,44 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-                                                             
+
 input[type=submit]:hover {
     background-color: rgba(3, 12, 20, 0.94);
 }
-                                                             
+
 textarea {
-    height:110px
+    height: 110px
 }
 
 
 
 
-                                                    /*** FOOTER ****/
+/*** FOOTER ****/
 footer {
-height: 20vh;
-/*Var ici car on a déclaré dans root (tout en haut) que la var bleu = la couleur bleu qu'on voulait*/
-background-color: var(--bleu);
-color: white;
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 20px;
-align-items: center;
-gap: 20px;
+    height: 20vh;
+    /*Var ici car on a déclaré dans root (tout en haut) que la var bleu = la couleur bleu qu'on voulait*/
+    background-color: var(--bleu);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
 }
 
 #horaires {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
-    #reseaux-sociaux {
-display: flex;
-gap: 20px;
+#reseaux-sociaux {
+    display: flex;
+    gap: 20px;
 }
-                                                    
+
 li {
     font-size: 20px;
     list-style-type: none;
@@ -665,42 +678,52 @@ footer li a i {
     transition: 0.65s;
 }
 
-                /*SURVOL*/
+/*SURVOL*/
 
 footer li a i:hover {
     transform: scale(1.4);
 }
 
 
-                                                /*********** SCROLL TO TOP ************/
+/*********** SCROLL TO TOP ************/
 
 #myScroll {
-    position: fixed; /* position fixée et collée */
-    bottom: 20px; /* Bouton placé en bas de page */
-    right: 30px; /* Bouton placé à 30px de la droite*/
-    z-index: 99; /* Placé de façon à ce qu'il ne se chevauche pas*/
-    border: none; /* Enlever les bordures */
-    outline: none; /* Supprimer les contours */
-    background-color: #e40034; /* Couleur du background */
-    color: white; /* Couleur du texte */
-    cursor: pointer; /* Ajout d'un pointer (souris) au survol(hover) */
-    width: 50px; 
+    position: fixed;
+    /* position fixée et collée */
+    bottom: 20px;
+    /* Bouton placé en bas de page */
+    right: 30px;
+    /* Bouton placé à 30px de la droite*/
+    z-index: 99;
+    /* Placé de façon à ce qu'il ne se chevauche pas*/
+    border: none;
+    /* Enlever les bordures */
+    outline: none;
+    /* Supprimer les contours */
+    background-color: #e40034;
+    /* Couleur du background */
+    color: white;
+    /* Couleur du texte */
+    cursor: pointer;
+    /* Ajout d'un pointer (souris) au survol(hover) */
+    width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100px; 
-    font-size: 18px; /* Taille police*/
+    border-radius: 100px;
+    font-size: 18px;
+    /* Taille police*/
 }
 
 #myScroll a {
     text-decoration: none;
     color: white;
- }
-                                                
+}
+
 /* ajout d'un background noir au survol */
 #myScroll:hover {
-    background-color: black; 
+    background-color: black;
     border: 1px solid white;
 }
 
@@ -712,19 +735,19 @@ footer li a i:hover {
 
 
 
-                                                /***************** RESPONSIVE*******************/
+/***************** RESPONSIVE*******************/
 
 
-                                       
-                                        
 
 
-                                        /* Responsive menu de navigation, evenements, galerie + formulaire de contact */
+
+
+/* Responsive menu de navigation, evenements, galerie + formulaire de contact */
 
 /*Tablette*/
 
- @media screen and (min-width: 601px) and (max-width: 1024px) {
-   
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
     header {
         position: relative;
     }
@@ -732,28 +755,28 @@ footer li a i:hover {
     #menu-navigation {
         gap: 20px;
     }
-                                        
+
     #items-menu .barre {
         display: none;
     }
-                                        
+
     #items-menu {
         flex-direction: column;
         text-align: center;
     }
-                                        
+
     #menu-navigation {
         flex-direction: column;
         padding-bottom: 20px;
     }
 
-                                        
+
     #container-encarts {
         flex-wrap: wrap;
         width: 75%;
         gap: 50px;
     }
-        
+
     #fleche {
         bottom: -9%;
     }
@@ -766,58 +789,58 @@ footer li a i:hover {
         flex-direction: column;
         align-items: center;
     }
-          
-    .accordeon{
-        min-width: 200px; 
+
+    .accordeon {
+        min-width: 200px;
     }
 
     #evenements {
         padding-top: 60px;
-        padding-bottom:60px;
+        padding-bottom: 60px;
         gap: 50px;
     }
 
-     .google-iframe {
-     width: 100%;
-     margin-bottom: 15%;
-     }
- 
-     .google-iframe iframe {
-     height: 150%;
-     }
- 
-     .contact-container {
-         width: 90%;
-     }
- 
-     .formulaire-container {
-         display: flex;
-         flex-wrap: wrap;
-         max-width: 100%;
-     }
-                                        
+    .google-iframe {
+        width: 100%;
+        margin-bottom: 15%;
+    }
+
+    .google-iframe iframe {
+        height: 150%;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+
+    .formulaire-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
     #container-encarts {
         flex-wrap: wrap;
         width: 75%;
         gap: 50px;
     }
-                                        
-                                        
+
+
     #evenements {
         padding-top: 60px;
-        padding-bottom:60px;
+        padding-bottom: 60px;
         gap: 50px;
     }
 
- }
+}
 
 
 
- 
 
 
- @media screen and (max-width: 600px) {
- 
+
+@media screen and (max-width: 600px) {
+
     header {
         position: relative;
     }
@@ -832,11 +855,11 @@ footer li a i:hover {
         margin-left: 6%;
     }
 
-                                        
+
     #items-menu .barre {
         display: none;
     }
-                                        
+
     #items-menu {
         flex-direction: column;
         text-align: center;
@@ -844,7 +867,7 @@ footer li a i:hover {
         /*Déplacé vers la droite pour ne plus que ca se voit*/
         transform: translateY(-250px);
     }
-                                        
+
     #menu-navigation {
         flex-direction: column;
     }
@@ -852,47 +875,48 @@ footer li a i:hover {
     /*Burger menu*/
 
     .burger {
-        display:block;
-        position:relative;
-        width:45px;
-        height:45px;
-        border:none;
-        background:transparent;
-        cursor:pointer;
-      }
-      
-      .bar-burger {
-        display:block;    
-        width:45px;
-        height:4px;  
-        border-radius:3px;
-        background: black; 
-        transition: all .5s ease-in-out;   
-      }
+        display: block;
+        position: relative;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
 
-      .bar-burger::before, .bar-burger::after {
-        content:"";
-        width:45px;
-        height:4px;
-        position:absolute; 
-        left:0;  
-        background: black; 
-        border-radius:3px;    
+    .bar-burger {
+        display: block;
+        width: 45px;
+        height: 4px;
+        border-radius: 3px;
+        background: black;
         transition: all .5s ease-in-out;
-      }
+    }
+
+    .bar-burger::before,
+    .bar-burger::after {
+        content: "";
+        width: 45px;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        background: black;
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+    }
 
 
-      /*Ici on indique à combien de pixels se trouvent les barres du dessous et du dessus*/
-      .bar-burger::before {
-        transform:translateY(-12px)
-      }
-      
-      .bar-burger::after {
-        transform:translateY(12px)
-      }
+    /*Ici on indique à combien de pixels se trouvent les barres du dessous et du dessus*/
+    .bar-burger::before {
+        transform: translateY(-12px)
+    }
 
-      /*Cette class show-nav a été ajoutée à partir du code JS, elle permet de réafficher les éléments (placés auparavant dans la partie non visible de l'écran en haut*/
-      .show-nav #items-menu { 
+    .bar-burger::after {
+        transform: translateY(12px)
+    }
+
+    /*Cette class show-nav a été ajoutée à partir du code JS, elle permet de réafficher les éléments (placés auparavant dans la partie non visible de l'écran en haut*/
+    .show-nav #items-menu {
         margin-top: 15%;
         /*Il faut à nouveau ajouter la couleur de fond car sinon les éléments sortent du flux (=ils sortent du menu)*/
         background-color: white;
@@ -901,60 +925,61 @@ footer li a i:hover {
         height: 30vh;
         /*On remet les éléments à leur place d'origine*/
         transform: translateX(0);
-        transition: 2s;     
-      } 
+        transition: 2s;
+    }
 
-      .show-nav .burger {
+    .show-nav .burger {
         transform: translateY(230px);
         transition: 2s;
-      }
+    }
 
-      /*Il faut mettre cette propriété pour ne pas que la barre du milieu de l'icone du menu s'affiche*/
-      .show-nav .bar-burger {
-        width:0;
-      }
+    /*Il faut mettre cette propriété pour ne pas que la barre du milieu de l'icone du menu s'affiche*/
+    .show-nav .bar-burger {
+        width: 0;
+    }
 
-      /*Ici, pour le before et after, on dit comment les barres du haut et du bas de l'icone du menu burger vont se comporter lorsque la class show-nav est activée (=quand on a cliqué pour ouvrir le menu)*/
-      .show-nav .bar-burger::before {
-        transform:rotate(45deg);
-      }
+    /*Ici, pour le before et after, on dit comment les barres du haut et du bas de l'icone du menu burger vont se comporter lorsque la class show-nav est activée (=quand on a cliqué pour ouvrir le menu)*/
+    .show-nav .bar-burger::before {
+        transform: rotate(45deg);
+    }
 
-      .show-nav .bar-burger::after {
-        transform:rotate(-45deg);
-      }
+    .show-nav .bar-burger::after {
+        transform: rotate(-45deg);
+    }
 
 
 
-      /* Fin burger */
-                                        
+    /* Fin burger */
+
     #container-encarts {
         flex-wrap: wrap;
         width: 75%;
         gap: 50px;
     }
 
-    .accordeon{
-        min-width: 400px; 
+    .accordeon {
+        min-width: 400px;
     }
-                                        
+
     #evenements {
         padding-top: 60px;
-        padding-bottom:60px;
+        padding-bottom: 60px;
         gap: 50px;
     }
 
-     .google-iframe {
-         width: 100%;
-         margin-bottom: 20%;
-         }
-     
-     .formulaire-container {
-         display: flex;
-         flex-wrap: wrap;
-         max-width: 100%;;
-         }
-     
-     .contact-container {
-         width: 80%;
-     }
- }
+    .google-iframe {
+        width: 100%;
+        margin-bottom: 20%;
+    }
+
+    .formulaire-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        ;
+    }
+
+    .contact-container {
+        width: 80%;
+    }
+}
