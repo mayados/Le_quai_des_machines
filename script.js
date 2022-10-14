@@ -18,7 +18,29 @@ buttons.forEach(function (button, index) {
       });
     });
 });
-            
+
+// Partie réservation 
+const selectCreneau = document.getElementById("creneau-reservation");
+const midiHeures = document.getElementById("H-midi");
+const soirHeures = document.getElementById("H-soir");
+
+function toggleCreneaux() {
+  if (selectCreneau.selectedIndex == 0) {
+    AfficherCreneauMidi()
+  } else if(selectCreneau.selectedIndex == 1) {
+    AfficherCreneau()
+  }
+  }
+  
+function AfficherCreneau() {
+  midiHeures.classList.add("hidden");
+  soirHeures.classList.remove("hidden");
+}
+
+function AfficherCreneauMidi() {
+  midiHeures.classList.remove("hidden");
+  soirHeures.classList.add("hidden");
+}
 
             
 
@@ -69,34 +91,3 @@ darkMode.addEventListener('change', () => {
   /* S'il y a bien des changements, les éléments du body concernés basculent en class "dark" (voir css pour les éléments ciblés) */
   document.body.classList.toggle('dark');
 });
-
-// Partie réservation 
-const midi = document.getElementById("creneau-heure-midi");
-const soir = document.getElementById("creneau-heure-soir");
-const midiHeures = document.getElementById("H-midi");
-const soirHeures = document.getElementById("H-soir");
-
-
-function AfficherCreneau() {
-  midiHeures.classList.add("hidden");
-  soirHeures.classList.remove("hidden");
-}
-
-function AfficherCreneauMidi() {
-  midiHeures.classList.remove("hidden");
-  soirHeures.classList.add("hidden");
-}
-
-function toggleCreneaux() {
-if(this.selectedIndex == 0) {
-  AfficherCreneauMidi()
-  } else if(this.selectedIndex == 1) {
-  AfficherCreneau()
-  }
-  console.log('lol');
-}
-
-
-// soir.addEventListener("click", AfficherCreneau());
-//soir.addEventListener("click", AfficherCreneau());
-// onChange="AfficherCreneau()"
