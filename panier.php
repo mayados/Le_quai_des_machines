@@ -38,7 +38,7 @@
                                             "<h4>Votre menu du jour</h4>",
                                             "<div class='elements-menu'>",
                                                 "<h5>Entrée</h5>",
-                                                "<h5>Plat</h5>",
+                                                "<h5>Plat". $_SESSION['menuSemaine'][0]['lundi']['plat']."</h5>",
                                                 "<h5>Dessert</h5>",
                                             "</div>",
                                         "</div>",
