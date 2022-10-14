@@ -44,7 +44,7 @@
                                                 "<h5>Dessert</h5>",
                                             "</div>",
                                         "</div>",
-                                        "<a class='sup-reservation' href='#'><p>Supprimer la réservation</p></a>",
+                                        "<a class='sup-reservation' href='traitement.php?action=suppprimerReservation&ref=$index'><p>Supprimer la réservation</p></a>",
                                     "</div>";
                             }
                             echo 
