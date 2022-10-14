@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/panier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Panier reservation</title>
 </head>
 <body>
@@ -27,9 +28,11 @@
                                 $ref=$index;
                                 var_dump($ref);
                                 echo "<div class='reservation'>",
-                                        "<div class='donnees'>",
-                                            "<div class='jour donnee'><p>".$reservation['jourReservation'] . "</p></div>",
-                                            "<div class='personnes donnee'<p>".$reservation['nombrePersonne'] ." personne(s)</p></div>",
+                                            "<div class='personnes donnee'<p>".$reservation['jourReservation'] ."</p></div>",
+                                            "<div class='donnees'>",
+                                            "<div class='jour donnee'><p><i class='fa-solid fa-minus'></i></a>" 
+                                            . $reservation['nombrePersonne'] .
+                                            "<i class='fa-solid fa-plus'></i>personne(s)</p></div>",
                                             "<div class='creneau donnee'><p>".$reservation['creneauReservation'] . "</p></div>",
                                             "<div class='heure donnee'><p>".$reservation['heureReservation'] . "</p></div>",
                                         "</div>",
@@ -64,3 +67,5 @@
     </div>
 </body>
 </html>
+
+</a>&nbsp;&nbsp;<a href='traitement.php?action=diminuerProduit&id=$index'><i class='cursor-pointer fa-solid fa-minus text-sm'></i></a>
