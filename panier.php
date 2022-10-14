@@ -67,9 +67,12 @@
                                 
                                 $ref=$index;
                                 echo "<div class='reservation'>",
-                                            "<div class='personnes donnee'<p>".$reservation['jourReservation'] ."</p></div>",
                                             "<div class='donnees'>",
-                                            "<div class='jour donnee'><a href='traitement.php?action=baisserNombrePersonne&ref=$index'><i class='fa-solid fa-minus'></i></a>".$reservation['nombrePersonne'].
+                                            "<div class='jour donnee'><p>".$reservation['jourReservation'] ."</p></div>",
+                                            "<div class='personnes donnee'>",
+                                            "<a href='traitement.php?action=baisserNombrePersonne&ref=$index'>",
+                                            "<i class='fa-solid fa-minus'></i>",
+                                            "</a>".$reservation['nombrePersonne'].
                                             "<a href='traitement.php?action=augmenterNombrePersonnes&ref=$index'><i class='fa-solid fa-plus'></i></a><p>personne(s)</p></div>",
                                             "<div class='creneau donnee'><p>".$reservation['creneauReservation'] . "</p></div>",
                                             "<div class='heure donnee'><p>".$reservation['heureReservation'] . "</p></div>",
