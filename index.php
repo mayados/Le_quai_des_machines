@@ -28,13 +28,46 @@ $dessert5 = "Tourton du pays nantais et son Curé nantais";
 $dessert6 = "Gâteau nantais et crémeux de yaourt";
 $dessert7 = "Petit beurre sur lit de Confiture de Muroise du Pays Nantais";
 
-$menuSemaine = ['lundi'=> ['entree'=>$entree1, 'plat'=>$menu1, 'dessert'=>$dessert1],
-                'mardi'=> ['entree'=>$entree2, 'plat'=>$menu2, 'dessert'=>$dessert2], 
-                'mercredi'=> ['entree'=>$entree3, 'plat'=>$menu3, 'dessert'=>$dessert3], 
-                'jeudi'=> ['entree'=>$entree4, 'plat'=>$menu4, 'dessert'=>$dessert4], 
-                'vendredi' => ['entree'=>$entree5, 'plat'=>$menu5, 'dessert'=>$dessert5], 
-                'samedi' => ['entree'=>$entree6, 'plat'=>$menu6, 'dessert'=>$dessert6],
-                'dimanche' => ['entree'=>$entree7, 'plat'=>$menu7, 'dessert'=>$dessert7]
+$menuSemaine = 
+[
+'lundi'=> 
+    [
+     'entree'=>$entree1, 
+     'plat'=>$menu1, 
+     'dessert'=>$dessert1
+    ],
+'mardi'=> 
+    [
+     'entree'=>$entree2, 
+     'plat'=>$menu2, 
+     'dessert'=>$dessert2
+    ], 
+'mercredi'=> 
+    [
+     'entree'=>$entree3, 
+     'plat'=>$menu3, 
+     'dessert'=>$dessert3
+    ], 
+'jeudi'=> 
+    [
+     'entree'=>$entree4, 
+     'plat'=>$menu4, 
+     'dessert'=>$dessert4], 
+'vendredi' => 
+    [
+     'entree'=>$entree5, 
+     'plat'=>$menu5, 
+     'dessert'=>$dessert5], 
+'samedi' => 
+    [
+     'entree'=>$entree6, 
+     'plat'=>$menu6, 
+     'dessert'=>$dessert6],
+'dimanche' => 
+    [
+     'entree'=>$entree7, 
+     'plat'=>$menu7, 
+     'dessert'=>$dessert7]
 ];
 
 /* Il faut toujours mettre les éléments que l'on veut mettre dans $_SESSION dans une autre variable car il faut pouvoir l'appeler */
