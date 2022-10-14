@@ -47,7 +47,7 @@
 
 
             /* Redirection vers le formulaire, qu'il soit saisi ou non */
-        header("Location:panier.php");
+            header("Location:panier.php");
         break;
         
         case "afficherMenu":
@@ -56,7 +56,7 @@
         break;
 
         case "viderPanier":
-      
+            unset($_SESSION['reservations']);  
             header("Location:panier.php");
         break;
 
@@ -74,7 +74,7 @@
         
             header("Location:panier.php");
         break;
-        }
+    }
 
   
 ?>
