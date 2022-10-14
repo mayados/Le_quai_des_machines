@@ -6,7 +6,9 @@
     $action = $_GET["action"];
 
     $ref = (isset($_GET['ref'])) ? $_GET['ref'] : "";
-    $menu = $_SESSION['menuSemaine'];
+    // $menu = $_SESSION['menuSemaine'][0];
+
+
 
     switch($action) {
 
@@ -54,12 +56,12 @@
         break;
         
         case "afficherMenu":
-            $result = null;
-            switch($menu) {
-                case 'lundi':
-                    $result = $_SESSION['menuSemaine'][0]['lundi']['plat'];
-                break;
-            }
+            $_SESSION['hello'] = "Hello";
+            // switch($menu) {
+            //     case 'lundi':
+            //         $_SESSION['result'] = $_SESSION['menuSemaine'][0]['lundi']['plat'];
+            //         break;
+            // }
             header("Location:panier.php");
         break;
 
@@ -83,6 +85,27 @@
             unset($_SESSION['reservations'][$ref]);
             header("Location:panier.php");
         break;
+    }
+
+
+      
+
+    switch($reservation['jourReservation']) {
+        case 'lundi':
+            $_SESSION['resultat'] = $_SESSION['menuSemaine'][0]['lundi']['plat'];
+            break;
+        case 'mardi':
+            $_SESSION['resultat'] = $_SESSION['menuSemaine'][0]['mardi']['plat'];
+            break;
+        case 'mercredi':
+            $_SESSION['resultat'] = $_SESSION['menuSemaine'][0]['mercredi']['plat'];
+            break;
+        case 'jeudi':
+            $_SESSION['resultat'] = $_SESSION['menuSemaine'][0]['jeudi']['plat'];
+            break;
+        case 'vendredi':
+            $_SESSION['resultat'] = $_SESSION['menuSemaine'][0]['vendredi']['plat'];
+            break;
     }
 
   
