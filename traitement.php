@@ -6,6 +6,7 @@
     $action = $_GET["action"];
 
     $ref = (isset($_GET['ref'])) ? $_GET['ref'] : "";
+    $menu = $_SESSION['menuSemaine'];
 
     switch($action) {
 
@@ -53,7 +54,12 @@
         break;
         
         case "afficherMenu":
-
+            $result = null;
+            switch($menu) {
+                case 'lundi':
+                    $result = $_SESSION['menuSemaine'][0]['lundi']['plat'];
+                break;
+            }
             header("Location:panier.php");
         break;
 
@@ -64,7 +70,7 @@
 
         case "baisserNombrePersonne":
             $_SESSION['reservations'][$ref]["nombrePersonne"]--;
-            header("Location:panier.php");            
+            header("Location:panier.php");         
         break;
 
         case "augmenterNombrePersonnes":
