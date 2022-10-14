@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#nb-personnes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    position: fixed;
+    width: 50%;
+    height: 70px;
+    background-color: rgb(131, 94, 24);
+    color: white;
+    z-index: 1;
+    border-radius: 7px;
+    font-size: 1.3rem;
+}
