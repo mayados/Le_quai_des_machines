@@ -5,6 +5,8 @@
     /* On a indiqué dans index que le mot clé pour récupérer action s'appelle "action"*/
     $action = $_GET["action"];
 
+    $cookie = "j'aime les cookies";
+
     switch($action) {
 
         case "ajouterProduit":
