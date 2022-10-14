@@ -95,16 +95,22 @@
             $_SESSION['resultat'] = $_SESSION['menuSemaine'][0]['lundi']['plat'];
             break;
         case 'mardi':
-            $_SESSION['resultat'] = $_SESSION['menuSemaine'][0]['mardi']['plat'];
+            $_SESSION['resultat'] = $_SESSION['menuSemaine'][1]['mardi']['plat'];
             break;
         case 'mercredi':
-            $_SESSION['resultat'] = $_SESSION['menuSemaine'][0]['mercredi']['plat'];
+            $_SESSION['resultat'] = $_SESSION['menuSemaine'][2]['mercredi']['plat'];
             break;
         case 'jeudi':
-            $_SESSION['resultat'] = $_SESSION['menuSemaine'][0]['jeudi']['plat'];
+            $_SESSION['resultat'] = $_SESSION['menuSemaine'][3]['jeudi']['plat'];
             break;
         case 'vendredi':
-            $_SESSION['resultat'] = $_SESSION['menuSemaine'][0]['vendredi']['plat'];
+            $_SESSION['resultat'] = $_SESSION['menuSemaine'][4]['vendredi']['plat'];
+            break;
+        case 'samedi':
+            $_SESSION['resultat'] = $_SESSION['menuSemaine'][5]['vendredi']['plat'];
+            break;
+        case 'dimanche':
+            $_SESSION['resultat'] = $_SESSION['menuSemaine'][6]['vendredi']['plat'];
             break;
     }
 
