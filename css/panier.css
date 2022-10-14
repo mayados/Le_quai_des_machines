@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+                /*****************AFFICHAGE SI PAS DE RESERVATION ********************/
+
+#container-no{
+    margin-top: 40%;
+}
+
+#no{
+    font-size: 2rem;
+    color: rgb(253, 253, 253);
+    text-shadow: 1px 1px 1px black;
+}
+
+                /***************** AFFICHAGE SI RESERVATION *****************/
+
+
 a {
     text-decoration: none;
     color: white;
