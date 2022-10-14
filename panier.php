@@ -25,6 +25,44 @@
                         /* Au cas où la clé existe et contient quelque chose, on affiche nos produits dans un tableau HTML */
                         else{
                             foreach($_SESSION['reservations'] as $index => $reservation){
+                                switch($reservation['jourReservation']) {
+                                    case 'lundi':
+                                        $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['lundi']['entree'];
+                                        $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['lundi']['plat'];
+                                        $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['lundi']['dessert'];
+                                        break;
+                                    case 'mardi':
+                                        $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['mardi']['entree'];
+                                        $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['mardi']['plat'];
+                                        $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['mardi']['dessert'];
+                                        break;
+                                    case 'mercredi':
+                                        $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['mercredi']['entree'];
+                                        $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['mercredi']['plat'];
+                                        $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['mercredi']['dessert'];
+                                        break;
+                                    case 'jeudi':
+                                        $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['jeudi']['entree'];
+                                        $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['jeudi']['plat'];
+                                        $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['jeudi']['dessert'];
+                                        break;
+                                    case 'vendredi':
+                                        $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['vendredi']['entree'];
+                                        $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['vendredi']['plat'];
+                                        $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['vendredi']['dessert'];
+                                        break;
+                                    case 'samedi':
+                                        $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['samedi']['entree'];
+                                        $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['samedi']['plat'];
+                                        $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['samedi']['dessert'];
+                                        break;
+                                    case 'dimanche':
+                                        $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['dimanche']['entree'];
+                                        $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['dimanche']['plat'];
+                                        $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['dimanche']['dessert'];
+                                        break;
+                            
+                                }
                                 $ref=$index;
                                 echo "<div class='reservation'>",
                                             "<div class='personnes donnee'<p>".$reservation['jourReservation'] ."</p></div>",
@@ -37,9 +75,12 @@
                                         "<div class='menu-jour'>",
                                             "<h4>Votre menu du jour</h4>",
                                             "<div class='elements-menu'>",
-                                                "<h5>Entrée :".$_SESSION['Entree']."</h5>",
-                                                "<h5>Plat : ".$_SESSION['Plat']."</h5>",
-                                                "<h5>Dessert :".$_SESSION['Dessert']."</h5>",
+                                                "<h5>Entrée :</h5>",
+                                                    "<p>".$_SESSION['Entree']."<p>",
+                                                "<h5>Plat : </h5>",
+                                                    "<p>".$_SESSION['Plat']."</p>",
+                                                "<h5>Dessert :</h5>",
+                                                "<p>".$_SESSION['Dessert']."</p>",
                                                 "</div>",
                                         "</div>",
                                         "<a class='sup-reservation' href='traitement.php?action=suppprimerReservation&ref=$index'><p>Supprimer la réservation</p></a>",
