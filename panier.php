@@ -1,6 +1,5 @@
 <!-- Pour cette page, nous avons besoin de parcourir le tableau session. Il faut donc d'abord récupérer la session de l'utilisateur  -->
 <?php
-
     session_start();
 ?>
 <!DOCTYPE html>
@@ -38,10 +37,10 @@
                                         "<div class='menu-jour'>",
                                             "<h4>Votre menu du jour</h4>",
                                             "<div class='elements-menu'>",
-                                                "<h5>Entrée : </h5>",
-                                                "<h5>Plat : ". $_SESSION['resultat'] ."</h5>",
-                                                "<h5>Dessert : </h5>",
-                                            "</div>",
+                                                "<h5>Entrée :".$_SESSION['Entree']."</h5>",
+                                                "<h5>Plat : ".$_SESSION['Plat']."</h5>",
+                                                "<h5>Dessert :".$_SESSION['Dessert']."</h5>",
+                                                "</div>",
                                         "</div>",
                                         "<a class='sup-reservation' href='traitement.php?action=suppprimerReservation&ref=$index'><p>Supprimer la réservation</p></a>",
                                     "</div>";
@@ -61,7 +60,7 @@
             <a id="retour-index" href="index.php">
                 <i class="fa-solid fa-rotate-left"></i>
                 <p>Retourner à la page d'accueil</p>
-            </a>                
+            </a> 
 
     </div>
 </body>

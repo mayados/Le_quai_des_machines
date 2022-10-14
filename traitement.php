@@ -88,30 +88,43 @@
     }
 
 
-      
-
     switch($reservation['jourReservation']) {
         case 'lundi':
-            $_SESSION['resultat'] = $_SESSION['menuSemaine'][0]['lundi']['plat'];
+            $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['lundi']['entree'];
+            $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['lundi']['plat'];
+            $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['lundi']['dessert'];
             break;
         case 'mardi':
-            $_SESSION['resultat'] = $_SESSION['menuSemaine'][1]['mardi']['plat'];
+            $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['mardi']['entree'];
+            $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['mardi']['plat'];
+            $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['mardi']['dessert'];
             break;
         case 'mercredi':
-            $_SESSION['resultat'] = $_SESSION['menuSemaine'][2]['mercredi']['plat'];
+            $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['mercredi']['entree'];
+            $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['mercredi']['plat'];
+            $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['mercredi']['dessert'];
             break;
         case 'jeudi':
-            $_SESSION['resultat'] = $_SESSION['menuSemaine'][3]['jeudi']['plat'];
+            $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['jeudi']['entree'];
+            $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['jeudi']['plat'];
+            $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['jeudi']['dessert'];
             break;
         case 'vendredi':
-            $_SESSION['resultat'] = $_SESSION['menuSemaine'][4]['vendredi']['plat'];
+            $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['vendredi']['entree'];
+            $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['vendredi']['plat'];
+            $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['vendredi']['dessert'];
             break;
         case 'samedi':
-            $_SESSION['resultat'] = $_SESSION['menuSemaine'][5]['vendredi']['plat'];
+            $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['samedi']['entree'];
+            $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['samedi']['plat'];
+            $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['samedi']['dessert'];
             break;
         case 'dimanche':
-            $_SESSION['resultat'] = $_SESSION['menuSemaine'][6]['vendredi']['plat'];
+            $_SESSION['Entree'] = $_SESSION['menuSemaine'][0]['dimanche']['entree'];
+            $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['dimanche']['plat'];
+            $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['dimanche']['dessert'];
             break;
+
     }
 
   

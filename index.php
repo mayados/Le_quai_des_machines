@@ -3,30 +3,31 @@
 /* Il faut avoir accès au tableau $_SESSION pour connaître les plats du jour */
 session_start();
 
+
 /* Construire les variables pour le menu de la semaine */
-$menu1 = "Pavé de sandre au beurre blanc du Pays Nantais (riz ou pomme de terre)";
-$menu2 = "Chaudrée de palourdes";
-$menu3 = "canard de Challans plongé dans une mare de sauce au muscadet (Accompagnement légumes de saison)";
-$menu4 = "Bardatte aux herbes fraîches sur un fondu de carotte et poireau primeur";
-$menu5 = "Plateau de fruits de mer de l’Atlantique";
-$menu6 = "Saucisse au Muscadet et sa robe de crêpe au sarrasin ";
-$menu7 = "Carré de côtes de porc braisé";
+$menu1 = " Pavé de sandre au beurre blanc du Pays Nantais (riz ou pomme de terre)";
+$menu2 = " Chaudrée de palourdes";
+$menu3 = " canard de Challans plongé dans une mare de sauce au muscadet (Accompagnement légumes de saison)";
+$menu4 = " Bardatte aux herbes fraîches sur un fondu de carotte et poireau primeur";
+$menu5 = " Plateau de fruits de mer de l’Atlantique";
+$menu6 = " Saucisse au Muscadet et sa robe de crêpe au sarrasin ";
+$menu7 = " Carré de côtes de porc braisé";
 
-$entree1 = "Salade ou velouté de mâche nantaise";
-$entree2 = "Rillettes au lapin";
-$entree3 = "Grenouilles des marais à la crème";
-$entree4 = "Pâté de foie chaud";
-$entree5 = "Poires tapées au vin";
-$entree6 = "Truite fumée, crème ciboulette";
-$entree7 = "Salade de Langouille";
+$entree1 = " Salade ou velouté de mâche nantaise";
+$entree2 = " Rillettes au lapin";
+$entree3 = " Grenouilles des marais à la crème";
+$entree4 = " Pâté de foie chaud";
+$entree5 = " Poires tapées au vin";
+$entree6 = " Truite fumée, crème ciboulette";
+$entree7 = " Salade de Langouille";
 
-$dessert1 = "Fondant baulois et fleur de glace Pêche de Vigne";
-$dessert2 = "Fouace perdue aux fruits rouges";
-$dessert3 = "Fouace perdue aux fruits rouges";
-$dessert4 = "Fondue de curé Nantais gratinée et variante de poires";
-$dessert5 = "Tourton du pays nantais et son Curé nantais";
-$dessert6 = "Gâteau nantais et crémeux de yaourt";
-$dessert7 = "Petit beurre sur lit de Confiture de Muroise du Pays Nantais";
+$dessert1 = " Fondant baulois et fleur de glace Pêche de Vigne";
+$dessert2 = " Fouace perdue aux fruits rouges";
+$dessert3 = " Fouace perdue aux fruits rouges";
+$dessert4 = " Fondue de curé Nantais gratinée et variante de poires";
+$dessert5 = " Tourton du pays nantais et son Curé nantais";
+$dessert6 = " Gâteau nantais et crémeux de yaourt";
+$dessert7 = " Petit beurre sur lit de Confiture de Muroise du Pays Nantais";
 
 $menuSemaine = 
 [
