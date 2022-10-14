@@ -1,6 +1,8 @@
 <!-- Pour cette page, nous avons besoin de parcourir le tableau session. Il faut donc d'abord récupérer la session de l'utilisateur  -->
 <?php
+
     session_start();
+    var_dump($_SESSION['menuSemaine']['lundi']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,5 +67,3 @@
     </div>
 </body>
 </html>
-
-</a>&nbsp;&nbsp;<a href='traitement.php?action=diminuerProduit&id=$index'><i class='cursor-pointer fa-solid fa-minus text-sm'></i></a>
