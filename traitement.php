@@ -50,6 +50,11 @@
         header("Location:panier.php");
         break;
         
+        case "afficherMenu":
+
+            header("Location:panier.php");
+        break;
+
         case "viderPanier":
       
             header("Location:panier.php");
