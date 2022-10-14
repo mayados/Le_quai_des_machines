@@ -5,6 +5,8 @@
     /* On a indiqué dans index que le mot clé pour récupérer action s'appelle "action"*/
     $action = $_GET["action"];
 
+    $ref = (isset($_GET['ref'])) ? $_GET['ref'] : "";
+
     switch($action) {
 
         case "ajouterProduit":
@@ -47,7 +49,7 @@
 
 
             /* Redirection vers le formulaire, qu'il soit saisi ou non */
-        header("Location:panier.php");
+            header("Location:panier.php");
         break;
         
         case "afficherMenu":
@@ -56,7 +58,7 @@
         break;
 
         case "viderPanier":
-      
+            unset($_SESSION['reservations']);  
             header("Location:panier.php");
         break;
 
@@ -74,10 +76,10 @@
         break;
 
         case "suppprimerReservation":  
-        
+            unset($_SESSION['reservations'][$ref]);
             header("Location:panier.php");
         break;
-        }
+    }
 
   
 ?>
