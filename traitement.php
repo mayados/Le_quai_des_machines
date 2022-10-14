@@ -6,7 +6,6 @@
     $action = $_GET["action"];
 
     $ref = (isset($_GET['ref'])) ? $_GET['ref'] : "";
-    // $menu = $_SESSION['menuSemaine'][0];
 
 
 

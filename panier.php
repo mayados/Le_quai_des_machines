@@ -61,8 +61,8 @@
                                         $_SESSION['Plat'] = $_SESSION['menuSemaine'][0]['dimanche']['plat'];
                                         $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['dimanche']['dessert'];
                                         break;
-                            
                                 }
+                                
                                 $ref=$index;
                                 echo "<div class='reservation'>",
                                             "<div class='personnes donnee'<p>".$reservation['jourReservation'] ."</p></div>",
