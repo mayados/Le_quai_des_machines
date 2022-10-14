@@ -1,7 +1,7 @@
 <?php
     /* Permet de démarrer une session sur le serveur pour l'utilisateur courant, ou la récupérer s'il en avait déjà une */
     session_start();
-
+    require('function.php');
     /* On a indiqué dans index que le mot clé pour récupérer action s'appelle "action"*/
     $action = $_GET["action"];
 
@@ -63,7 +63,7 @@
             if($_SESSION['reservations'][$ref]["nombrePersonne"] > 1){
                 $_SESSION['reservations'][$ref]["nombrePersonne"]--;
             }else {
-                $_SESSION['message'] ="<div id='nb-personnes'>Le nombre de personnes doit être supérieur à 0</div>" ;       
+                $_SESSION['message'] = "<div id='nb-personnes'><p>Le nombre de personnes doit être supérieur à 0</p></div>" ;       
             }  
             header("Location:panier.php");                 
         break;
