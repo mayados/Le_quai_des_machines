@@ -26,7 +26,6 @@
                         else{
                             foreach($_SESSION['reservations'] as $index => $reservation){
                                 $ref=$index;
-                                var_dump($ref);
                                 echo "<div class='reservation'>",
                                             "<div class='personnes donnee'<p>".$reservation['jourReservation'] ."</p></div>",
                                             "<div class='donnees'>",
