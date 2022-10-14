@@ -54,16 +54,6 @@
             header("Location:panier.php");
         break;
         
-        case "afficherMenu":
-            $_SESSION['hello'] = "Hello";
-            // switch($menu) {
-            //     case 'lundi':
-            //         $_SESSION['result'] = $_SESSION['menuSemaine'][0]['lundi']['plat'];
-            //         break;
-            // }
-            header("Location:panier.php");
-        break;
-
         case "viderPanier":
             unset($_SESSION['reservations']);  
             header("Location:panier.php");
@@ -86,6 +76,8 @@
         break;
     }
 
+
+  
 
   
 ?>
