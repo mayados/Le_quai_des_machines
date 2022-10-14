@@ -9,6 +9,10 @@ a {
     color: white;
 }
 
+body{
+    background-color: black;
+}
+
 #container-page {
     padding-top: 2%;
     background-image: url("../img/tables.jpg");
