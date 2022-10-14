@@ -1,6 +1,8 @@
 <!-- Pour cette page, nous avons besoin de parcourir le tableau session. Il faut donc d'abord récupérer la session de l'utilisateur  -->
 <?php
     session_start();
+    require('function.php');
+    showMessage();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +22,7 @@
                 <?php 
                         /* Si la clé "reservations" du tableau session n'existe pas OU si elle existe mais ne contient auncune donnée, on affiche un message */
                         if(!isset($_SESSION['reservations']) || empty($_SESSION['reservations'])){
-                            echo "<p> Auncune réservation effectuée...</p>";
+                            echo "<div id='container-no'><p id='no'> Aucune réservation effectuée...</p></div>";
                         }
                         /* Au cas où la clé existe et contient quelque chose, on affiche nos produits dans un tableau HTML */
                         else{
