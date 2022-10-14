@@ -44,13 +44,14 @@
                                         "<a class='sup-reservation' href='#'><p>Supprimer la réservation</p></a>",
                                     "</div>";
                             }
-                            echo "
-                                    <p>Merci pour votre réservation !</p>
-                                    <p>Un e-mail de confirmation vous a été envoyé</p>
-                                    <a id='retour-index' href='index.php'>
-                                        <i class='fa-solid fa-rotate-left'></i>
-                                        <p>Réserver une autre table</p>
-                                    </a>";                             
+                            echo 
+                                    "<a href='traitement.php?action=viderPanier'>Supprimer l'ensemble des réservations</a>",
+                                    "<p>Merci pour votre réservation !</p>",
+                                    "<p>Un e-mail de confirmation vous a été envoyé</p>",
+                                    "<a id='retour-index' href='index.php'>",
+                                        "<i class='fa-solid fa-rotate-left'></i>",
+                                        "<p>Réserver une autre table</p>",
+                                    "</a>";                             
                         }
                     ?>
             </div>
