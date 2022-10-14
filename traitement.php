@@ -5,6 +5,8 @@
     /* On a indiqué dans index que le mot clé pour récupérer action s'appelle "action"*/
     $action = $_GET["action"];
 
+    $ref = (isset($_GET['ref'])) ? $_GET['ref'] : "";
+
     switch($action) {
 
         case "ajouterProduit":
@@ -71,7 +73,7 @@
         break;
 
         case "suppprimerReservation":  
-        
+            unset($_SESSION['reservations'][$ref]);
             header("Location:panier.php");
         break;
     }
