@@ -414,11 +414,11 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                         <label for="nombrePersonne">Nombre de personnes</label>
                         <input type="number" id="nombrePersonne" name="nombrePersonne" placeholder="Nombre de personnes">
 
-                        <div id="flex-menu">           
-                            <ul class="ul-acordeon">
+                        <div id="form-reservation">           
+                            <!-- <ul class="ul-acordeon">
                                 <li>
-                                    <a href="#menu1" class="button">Jours</a>
-                                    <div id="menu1" class="content menu">
+                                    <a href="#menu1" class="button">Jours</a> -->
+                                    <div>
                                     <label for="jour-select">Sélectionnez votre jour de réservation</label>
                                         <select name="jour-reservation" id="jour-reservation">
                                             <option value="lundi" name="lundi">Lundi</option>
@@ -457,15 +457,15 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                                             <option value="22h00">22h00</option>
                                         </select>
                                     </div>  
-                                </li>
-                            </ul>
+                                <!-- </li>
+                            </ul> -->
                         </div>    
 
                         <label for="mail">Adresse mail</label>
                         <input type="text" id="mail" name="mail" placeholder="votre@adresse.mail">
 
-                        <label for="sujet">Sujet</label>
-                        <textarea id="sujet" name="sujet" placeholder="Ecrivez quelque chose..."></textarea>
+                        <!-- <label for="sujet">Sujet</label>
+                        <textarea id="sujet" name="sujet" placeholder="Ecrivez quelque chose..."></textarea> -->
 
                         <input name="submit" type="submit" value="Envoyer">
 
