@@ -184,7 +184,7 @@ header {
 
 .bg-accueil {
     position: relative;
-    background-image: url("/img/restaurant-accueil.png");
+    background-image: url("../img/restaurant-accueil.png");
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -375,7 +375,6 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    max-width: 700px;
     list-style: none;
     text-align: center;
     /*Afin de centrer également le bouton télécharger le menu*/
@@ -389,7 +388,7 @@ li .button {
     background-color: #e40034;
     color: #000;
     text-decoration: none;
-    min-width: 700px;
+    width: 700px;
 }
 
 li .content {
@@ -416,12 +415,6 @@ li.on .content {
 #menu,
 .accordeon {
     padding-top: 3%;
-}
-
-
-#menu h2 {
-    color: #e40034;
-    text-align: center;
 }
 
 .menu p {
@@ -781,17 +774,14 @@ footer li a i:hover {
         bottom: -9%;
     }
 
-    .ul-acordeon {
-        min-width: 200px;
+    li .button{
+        width: 550px;
     }
 
     #flex-menu {
         flex-direction: column;
         align-items: center;
-    }
 
-    .accordeon {
-        min-width: 200px;
     }
 
     #evenements {
@@ -929,7 +919,13 @@ footer li a i:hover {
     }
 
     .show-nav .burger {
-        transform: translateY(230px);
+        transform: translateY(180px);
+        transition: 2s;
+    }
+
+    /*Pour que les éléments du dark mode ailent plus bas que le menu quand il se met en place*/
+    .show-nav .dark-mode{
+        transform: translateY(190px);
         transition: 2s;
     }
 
@@ -957,8 +953,8 @@ footer li a i:hover {
         gap: 50px;
     }
 
-    .accordeon {
-        min-width: 400px;
+    li .button{
+        width: 300px;
     }
 
     #evenements {
