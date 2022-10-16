@@ -389,7 +389,9 @@ li .button {
     color: #000;
     text-decoration: none;
     width: 700px;
+    color: white;
 }
+
 
 li .content {
     display: none;
@@ -398,9 +400,6 @@ li .content {
     text-align: center;
 }
 
-#menu>ul>li>a {
-    color: white;
-}
 
 .menu {
     width: 100%;
