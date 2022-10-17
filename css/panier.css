@@ -25,25 +25,22 @@ a {
     text-decoration: none;
     color: white;
 }
-body{
-    background-color: black;
-}
+
 #container-page {
     padding-top: 2%;
-    background-image: url("../img/tables.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-   /* L'image s'adapte pour couvrir son container */
-    background-size: cover;
     width: 100%;
     text-align: center;
     height: 100%;
-    color: white;
+    color: white; 
+    background-image: url("../img/tables.jpg");
+    background-repeat: repeat;
+    background-position: center;
+   /* L'image s'adapte pour couvrir son container */
 }
 
 h1, h3 {
     color: white;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px 1px var(--bleu);
 }
 
 h3 {
@@ -178,4 +175,4 @@ h4{
         width: 120px;
         height: 50px;
    }
-}
+} 
