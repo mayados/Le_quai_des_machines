@@ -38,6 +38,16 @@ a {
    /* L'image s'adapte pour couvrir son container */
 }
 
+h4#menu, h5 {
+    color: var(--rose);
+}
+
+.content-menu {
+    color: var(--bleu);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 h1, h3 {
     color: white;
     text-shadow: 1px 1px 1px var(--bleu);
@@ -128,9 +138,7 @@ h4{
 .title-menu{
     font-size: 1.3rem;
 }
-.elements-menu p{
-    font-size: 1.1rem;
-}
+
 .menu-jour {
     margin-top: 30px;
     display: flex;
