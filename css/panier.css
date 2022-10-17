@@ -155,13 +155,14 @@ h4{
 .sup-reservation {
     position: absolute;
     bottom: 20px;
-    width: 30%;
+    width: 36%;
     height: 30px;
     background-color: rgb(231, 4, 57);
     border-radius: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.2rem;
 }
 /*Responsive Tablette*/
 @media screen and (min-width: 601px) and (max-width: 1024px) {
