@@ -21,8 +21,8 @@ buttons.forEach(function (button, index) {
 
 // Partie réservation 
 const selectCreneau = document.getElementById("creneau-reservation");
-const midiHeures = document.getElementById("H-midi");
-const soirHeures = document.getElementById("H-soir");
+let midiHeures = document.getElementById("H-midi");
+let soirHeures = document.getElementById("H-soir");
 
 function toggleCreneaux() {
   if (selectCreneau.selectedIndex == 0) {
@@ -35,12 +35,18 @@ function toggleCreneaux() {
 function AfficherCreneau() {
   midiHeures.classList.add("hidden");
   soirHeures.classList.remove("hidden");
+  soirHeures.setAttribute("name","creneau-heure");
+  midiHeures.removeAttribute("name","creneau-heure");
 }
 
 function AfficherCreneauMidi() {
   midiHeures.classList.remove("hidden");
   soirHeures.classList.add("hidden");
+  midiHeures.setAttribute("name","creneau-heure");
+  soirHeures.removeAttribute("name","creneau-heure");
 }
+
+
 
             
 
@@ -76,8 +82,6 @@ function afficherMenu() {
 } 
 
 afficherMenu();
-
-
 
 
 
