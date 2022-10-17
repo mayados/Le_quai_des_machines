@@ -636,7 +636,7 @@ textarea {
 
 /*** FOOTER ****/
 footer {
-    height: 20vh;
+    height: 100%;
     /*Var ici car on a déclaré dans root (tout en haut) que la var bleu = la couleur bleu qu'on voulait*/
     background-color: var(--bleu);
     color: white;
@@ -912,7 +912,7 @@ footer li a i:hover {
         background-color: white;
         /*La taille que prennent  les éléments par rapport à la largeur du viewport*/
         width: 100vw;
-        height: 30vh;
+        height: 70vh;
         /*On remet les éléments à leur place d'origine*/
         transform: translateX(0);
         transition: 2s;
