@@ -26,6 +26,7 @@ a {
 
 body{
     background-color: black;
+    
 }
 
 #container-page {
@@ -37,7 +38,7 @@ body{
     background-size: cover;
     width: 100%;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     color: white;
 }
 
@@ -50,8 +51,7 @@ h3 {
 /********** CONTAINER PRINCIPAL POUR TOUTES LES RESERVATIONS***********/
 
 #container-reservation {
-    margin: 0 auto;
-    width: 50%;
+    width: 100%;
     padding: 20px 0;
     position: relative;
 }
@@ -156,4 +156,30 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+                            /*Responsive Tablette*/
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .reservation {
+        width: 550px;
+        height: 550px;
+    }
+    
+    .jour,
+    .heure {
+        width: 130px;
+        height: 50px;
+    }
+
+    .personnes,
+    .creneau {
+        width: 120px;
+        height: 50px;
+    }
+
 }
