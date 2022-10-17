@@ -288,20 +288,24 @@
      align-items: center;
      justify-content: center;
 }
- li .button {
-     display: block;
-     padding: 20px;
-     background-color: #e40034;
-     color: #000;
-     text-decoration: none;
-     width: 700px;
-     color: white;
+
+li .button {
+    position: relative;
+    display: block;
+    padding: 20px;
+    background-color: #e40034;
+    color: #000;
+    text-decoration: none;
+    width: 700px;
+    color: white;
 }
- li .content {
-     display: none;
-     padding: 20px;
-     border-top: 1px solid #ddd;
-     text-align: center;
+
+
+li .content {
+    display: none;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
 }
  .menu {
      width: 100%;
@@ -580,9 +584,15 @@
      li .button{
          width: 550px;
     }
-     #flex-menu {
-         flex-direction: column;
-         align-items: center;
+
+    li .content {
+        width: 550px;
+    } 
+
+    #flex-menu {
+        flex-direction: column;
+        align-items: center;
+
     }
      #evenements {
          padding-top: 60px;
@@ -717,10 +727,15 @@
      li .button{
          width: 300px;
     }
-     #evenements {
-         padding-top: 60px;
-         padding-bottom: 60px;
-         gap: 50px;
+
+    li .content {
+        width: 300px;
+    } 
+
+    #evenements {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        gap: 50px;
     }
      .google-iframe {
          width: 100%;

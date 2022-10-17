@@ -129,8 +129,14 @@ h4{
     .reservation {
         width: 550px;
         height: 550px;
-   }
-    .jour, .heure {
+    }
+    
+    .donnees .personnes{
+        font-size: 0.8rem;
+    }
+
+    .jour,
+    .heure {
         width: 130px;
         height: 50px;
    }
