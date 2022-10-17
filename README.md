@@ -39,4 +39,12 @@ On this website you will find :
 - Downloading the menu in PDF format and open it in a new tab
 - Retrieve datas through a contact form
 
+## Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Blue navy | ![#091729](https://via.placeholder.com/10/0a192f?text=+) #091729 |
+| Rose| ![#e40034](https://via.placeholder.com/10/e40034?text=+) #e40034 |
+| White | ![#FFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFF |
+| Black | ![#000](https://via.placeholder.com/10/000?text=+) #000 |
 
