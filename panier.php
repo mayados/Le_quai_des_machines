@@ -17,7 +17,16 @@
 <body>
     <div id="container-page">
             <h1> Le Quai des Machines </h1>    
-            <h3>14 Bd Léon Bureau 44200 Nantes</h3>        
+            <h3>14 Bd Léon Bureau 44200 Nantes</h3>
+            <?php echo 
+            "<p>Votre réservation est confirmée !</p>",
+            "<div class='confirmation-reservation>'",
+                "<p>Merci pour votre réservation</p>",
+            "</div>",
+                                    "<a id='retour-index' href='index.php'>",
+                                        "<i class='fa-solid fa-rotate-left'></i><p>Réserver une autre table</p>",
+                                    "</a>";     
+            ?>
             <div id="container-reservation">
                 <?php 
                         /* Si la clé "reservations" du tableau session n'existe pas OU si elle existe mais ne contient auncune donnée, on affiche un message */
@@ -92,13 +101,7 @@
                                     "</div>";
                             }
                             echo 
-                                    "<a href='traitement.php?action=viderPanier'>Supprimer l'ensemble des réservations</a>",
-                                    "<p>Merci pour votre réservation !</p>",
-                                    "<p>Un e-mail de confirmation vous a été envoyé</p>",
-                                    "<a id='retour-index' href='index.php'>",
-                                        "<i class='fa-solid fa-rotate-left'></i>",
-                                        "<p>Réserver une autre table</p>",
-                                    "</a>";                             
+                                    "<a href='traitement.php?action=viderPanier'>Supprimer l'ensemble des réservations</a>";                             
                         }
                     ?>
             </div>

@@ -3,63 +3,49 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-                /*****************AFFICHAGE SI PAS DE RESERVATION ********************/
-
+/*****************AFFICHAGE SI PAS DE RESERVATION ********************/
 #container-no{
     margin-top: 40%;
 }
-
 #no{
     font-size: 2rem;
     color: rgb(253, 253, 253);
     text-shadow: 1px 1px 1px black;
 }
-
-                /***************** AFFICHAGE SI RESERVATION *****************/
-
-
+/***************** AFFICHAGE SI RESERVATION *****************/
 a {
     text-decoration: none;
     color: white;
 }
-
 body{
     background-color: black;
-    
 }
-
 #container-page {
     padding-top: 2%;
     background-image: url("../img/tables.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    /* L'image s'adapte pour couvrir son container */
+   /* L'image s'adapte pour couvrir son container */
     background-size: cover;
     width: 100%;
     text-align: center;
     height: 100%;
     color: white;
 }
-
-h1,
-h3 {
+h1, h3 {
     color: white;
     text-shadow: 1px 1px black;
 }
-
 /********** CONTAINER PRINCIPAL POUR TOUTES LES RESERVATIONS***********/
-
 #container-reservation {
     width: 100%;
     padding: 20px 0;
     position: relative;
 }
-
-/************CONTAINER  POUR CHAQUE RESERVATION ****************/
-
+/************CONTAINER POUR CHAQUE RESERVATION ****************/
 .reservation {
     background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     display: flex;
     flex-direction: column;
@@ -71,15 +57,12 @@ h3 {
     margin-top: 5%;
     border-radius: 50px;
 }
-
 /************** DIV DONNEES*******************/
-
 .donnees {
     display: flex;
     flex-direction: row;
     gap: 2px;
 }
-
 .donnee {
     background-color: rgb(231, 4, 57, 0.8);
     text-align: center;
@@ -88,56 +71,41 @@ h3 {
     align-items: center;
     gap: 5px;
 }
-
 .donnee:hover {
     background-color: rgb(196, 2, 47);
 }
-
-.jour,
-.heure {
+.jour, .heure {
     width: 150px;
     height: 50px;
 }
-
-.personnes,
-.creneau {
+.personnes, .creneau {
     width: 140px;
     height: 50px;
 }
-
 .jour {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-
 .heure {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
-
-
 /************** DIV MENU-JOUR ****************/
-
 h4{
     font-size: 1.6rem;
 }
-
 .title-menu{
     font-size: 1.3rem;
 }
-
 .elements-menu p{
     font-size: 1.1rem;
 }
-
 .menu-jour {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .elements-menu {
     display: flex;
     flex-direction: column;
@@ -145,7 +113,6 @@ h4{
     align-items: center;
     gap: 10px;
 }
-
 .sup-reservation {
     position: absolute;
     bottom: 20px;
@@ -157,29 +124,18 @@ h4{
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-                            /*Responsive Tablette*/
-
+/*Responsive Tablette*/
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-
     .reservation {
         width: 550px;
         height: 550px;
-    }
-    
-    .jour,
-    .heure {
+   }
+    .jour, .heure {
         width: 130px;
         height: 50px;
-    }
-
-    .personnes,
-    .creneau {
+   }
+    .personnes, .creneau {
         width: 120px;
         height: 50px;
-    }
-
+   }
 }
