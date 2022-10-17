@@ -443,7 +443,7 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                                             <option value="13h30">13h30</option>
                                             <option value="14h00">14h00</option>
                                         </select>
-                                        <select class="hidden heures-soir" name="creneau-heure" id="H-soir">
+                                        <select class="hidden heures-soir" id="H-soir">
                                             <option value="18h00">18h00</option>
                                             <option value="18h30">18h30</option>
                                             <option value="19h00">19h00</option>
