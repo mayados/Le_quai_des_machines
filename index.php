@@ -216,19 +216,19 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                             <li>
                                 <a href="#menu3" class="button">Mercredi</a>
                                 <div id="menu3" class="content menu">
-                                    <div class="entree">
-                                        <p>Entrée</p>
-                                        <p><?php echo $entree3; ?></p>                                    
+                                    <div class='entree'>
+                                        <p>Entrée<br>
+                                        <p><?php echo $entree2; ?></p>                                    
                                     </div>
-                                    <div class="plat">
+                                    <div class='plat'>
                                         <p>Plat</p>
-                                        <p><?php echo $menu3; ?></p>                                    
+                                        <p><?php echo $menu2; ?></p>                                    
                                     </div>
-                                    <div class="dessert">
+                                    <div class='dessert'>
                                         <p>Dessert</p>
-                                        <p><?php echo $dessert3; ?></p>                                    
+                                        <p><?php echo $dessert2; ?></p>                                    
                                     </div>
-                                </div> 
+                                </div>
                             </li>
                             <li>
                                 <a href="#menu4" class="button">Jeudi</a>
