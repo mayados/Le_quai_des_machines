@@ -7,7 +7,7 @@ session_start();
 /* Construire les variables pour le menu de la semaine */
 $menu1 = " Pavé de sandre au beurre blanc du Pays Nantais (riz ou pomme de terre)";
 $menu2 = " Chaudrée de palourdes";
-$menu3 = " canard de Challans plongé dans une mare de sauce au muscadet (Accompagnement légumes de saison)";
+$menu3 = "canard de Challans plongé dans une mare de sauce au muscadet (Accompagnement légumes de saison)";
 $menu4 = " Bardatte aux herbes fraîches sur un fondu de carotte et poireau primeur";
 $menu5 = " Plateau de fruits de mer de l’Atlantique";
 $menu6 = " Saucisse au Muscadet et sa robe de crêpe au sarrasin ";
@@ -218,15 +218,15 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                                 <div id="menu3" class="content menu">
                                     <div class='entree'>
                                         <p>Entrée<br>
-                                        <p><?php echo $entree2; ?></p>                                    
+                                        <p><?php echo $entree3; ?></p>                                    
                                     </div>
                                     <div class='plat'>
                                         <p>Plat</p>
-                                        <p><?php echo $menu2; ?></p>                                    
+                                        <p><?php echo $menu3; ?></p>                                    
                                     </div>
                                     <div class='dessert'>
                                         <p>Dessert</p>
-                                        <p><?php echo $dessert2; ?></p>                                    
+                                        <p><?php echo $dessert3; ?></p>                                    
                                     </div>
                                 </div>
                             </li>
