@@ -3,6 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --bleu: #091729;
+    --rose: #e40034;
+    --blanc: white;
+    --noir: black;
+}
+
 /*****************AFFICHAGE SI PAS DE RESERVATION ********************/
 #container-no{
     margin-top: 40%;
@@ -32,9 +40,35 @@ body{
     height: 100%;
     color: white;
 }
+
 h1, h3 {
     color: white;
     text-shadow: 1px 1px black;
+}
+
+h3 {
+    margin-bottom: 3%;
+}
+
+.fa-solid {
+    margin-top: 3%;
+}
+
+.confirmation-reservation {
+    background-color: var(--rose);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.confirmation-reservation-p {
+    font-size: 20px;
+}
+
+.validate {
+    margin: 15px 0px;
 }
 /********** CONTAINER PRINCIPAL POUR TOUTES LES RESERVATIONS***********/
 #container-reservation {
