@@ -855,6 +855,7 @@ footer li a i:hover {
         position: absolute;
         /*Déplacé vers la droite pour ne plus que ca se voit*/
         transform: translateY(-250px);
+        background-color: white;
     }
 
     #menu-navigation {
