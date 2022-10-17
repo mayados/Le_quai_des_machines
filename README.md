@@ -16,6 +16,16 @@ The main goals were working :
 - concerning the PHP part, we wanted to practice with the superglobals like GET, POST and SESSION as well as the manipulation of tables.
 This is why you will not find a DataBase and SQL requests.
 
+## Description
+
+On this website you will find :
+- a navigation bar (with different sections, the logo,the dark mode button)
+- a gallery section
+- section menu with the differents dishes of the week and a video
+- section events of the restaurant
+- contact/booking form
+- footer with the open hours
+- the ability to delete a reservation and to change the number of customers
 
 
 ## Features
@@ -28,13 +38,7 @@ This is why you will not find a DataBase and SQL requests.
 - Retrieve datas through a contact form
 
 
-
 ## Authors
 - [@sabrinabldj](https://github.com/sabrinabldj)
 - [@mayados](https://github.com/mayados)
 - [@jotawk](https://github.com/jotawk)
-
-
-## Description
-
-On this website you will find
