@@ -402,22 +402,22 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                 <div class="contact-container">
                     <form action="traitement.php?action=ajouterProduit" method="post">
 
-                        <label for="nom">Nom</label>
+                        <label for="nom">Nom :</label>
                         <input type="text" id="nom" name="nom" placeholder="Votre nom">
 
-                        <label for="prenom">Prénom</label>
+                        <label for="prenom">Prénom :</label>
                         <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
 
-                        <label for="telephone">Numéro de téléphone</label>
+                        <label for="telephone">Numéro de téléphone :</label>
                         <input type="number" id="telephone" name="telephone" placeholder="Numéro de téléphone">
 
-                        <label for="nombrePersonne">Nombre de personnes</label>
+                        <label for="nombrePersonne">Nombre de personnes :</label>
                         <input type="number" id="nombrePersonne" name="nombrePersonne" placeholder="Nombre de personnes">
 
                         <div id="form-reservation">           
 
                                     <div>
-                                    <label for="jour-select">Sélectionnez votre jour de réservation</label>
+                                    <label for="jour-select">Sélectionnez votre jour de réservation :</label>
                                         <select name="jour-reservation" id="jour-reservation">
                                             <option value="lundi" name="lundi">Lundi</option>
                                             <option value="mardi" name="mardi">Mardi</option>
@@ -427,7 +427,7 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                                             <option value="samedi" name="samedi">Samedi</option>
                                             <option value="dimanche" name="dimanche">Dimanche</option>
                                         </select>
-                                    <label for="creneau-select">Sélectionnez votre créneau</label>
+                                    <label for="creneau-select">Sélectionnez votre créneau :</label>
                                         <select onchange="toggleCreneaux()"
                                         name="creneau-reservation" id="creneau-reservation" >
                                         <option class="midi" value="midi" id="creneau-heure-midi">Midi</option>
@@ -458,7 +458,7 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
 
                         </div>    
 
-                        <label for="mail">Adresse mail</label>
+                        <label for="mail">Adresse mail :</label>
                         <input type="text" id="mail" name="mail" placeholder="votre@adresse.mail">
 
 
