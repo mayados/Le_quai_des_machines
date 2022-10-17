@@ -39,8 +39,6 @@ On this website you will find :
 - Downloading the menu in PDF format and open it in a new tab
 - Retrieve datas through a contact form
 
-## Color Reference
-
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Blue navy | ![#091729](https://via.placeholder.com/10/0a192f?text=+) #091729 |
