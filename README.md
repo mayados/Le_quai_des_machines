@@ -40,7 +40,6 @@ On this website you will find :
 - Retrieve datas through a contact form
 ## Color Reference
 
-https://zupimages.net/viewer.php?id=22/42/dwc8.jpg
-
+![color-reference](https://user-images.githubusercontent.com/56578851/196209791-61ef3c83-7c75-455c-a3c8-4ac21ac7f65f.jpg)
 
 
