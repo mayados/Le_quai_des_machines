@@ -21,14 +21,13 @@
                 $telephone = $_POST['telephone'];
                 $nombrePersonne = filter_input(INPUT_POST, "nombrePersonne", FILTER_VALIDATE_INT);
                 $mail = filter_input(INPUT_POST, "mail", FILTER_VALIDATE_EMAIL);
-                $sujet = filter_input(INPUT_POST, "sujet", FILTER_SANITIZE_SPECIAL_CHARS);
                 $jourReservation = filter_input(INPUT_POST, "jour-reservation", FILTER_SANITIZE_SPECIAL_CHARS);
                 $creneauReservation = filter_input(INPUT_POST, "creneau-reservation", FILTER_SANITIZE_SPECIAL_CHARS);
                 /* Comme les options sont déjà définies, il suffit de lire l'option choisie dans select */
                 $heureReservation = $_POST['creneau-heure'];
                 
                 //Nous devons conserver chaque produit renseigné, donc les stocker esession. On décide d'abord de leur organisation au sein de la session 
-                if($nom && $prenom && $telephone && $nombrePersonne && $mail && $sujet && $jourReservation && $creneauReservation && $heureReservation){
+                if($nom && $prenom && $telephone && $nombrePersonne && $mail  && $jourReservation && $creneauReservation && $heureReservation){
 
                     $reservation = [
                         "nom" => $nom,
@@ -36,7 +35,6 @@
                         "telephone" => $telephone,
                         "nombrePersonne" => $nombrePersonne,
                         "mail" => $mail,
-                        "sujet" => $sujet,
                         "jourReservation" => $jourReservation,
                         "creneauReservation" => $creneauReservation,
                         "heureReservation" => $heureReservation
