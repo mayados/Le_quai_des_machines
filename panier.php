@@ -18,15 +18,18 @@
     <div id="container-page">
             <h1> Le Quai des Machines </h1>    
             <h3>14 Bd Léon Bureau 44200 Nantes</h3>
-            <?php echo 
-            "<p>Votre réservation est confirmée !</p>",
-            "<div class='confirmation-reservation>'",
-                "<p>Merci pour votre réservation</p>",
-            "</div>",
-                                    "<a id='retour-index' href='index.php'>",
-                                        "<i class='fa-solid fa-rotate-left'></i><p>Réserver une autre table</p>",
-                                    "</a>";     
-            ?>
+            <?php 
+              if(isset($_SESSION['reservations']) || !empty($_SESSION['reservations'])){
+               echo
+               "<div class='confirmation-reservation'>",
+                "<p class='confirmation-reservation-p'>Votre réservation est confirmée !</p>",
+                "<img class='validate' src='./img/validate.png' alt='validate icone' width='auto' height='60px'>",
+                "<p class='confirmation-reservation-p'>Merci pour votre réservation</p>",
+               "</div>",
+                "<a id='retour-index' href='index.php'>",
+                    "<i class='fa-solid fa-rotate-left'></i><p>Réserver une autre table</p>",
+                "</a>"; 
+            } ?>
             <div id="container-reservation">
                 <?php 
                         /* Si la clé "reservations" du tableau session n'existe pas OU si elle existe mais ne contient auncune donnée, on affiche un message */
