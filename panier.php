@@ -76,22 +76,25 @@
                                         $_SESSION['Dessert'] = $_SESSION['menuSemaine'][0]['dimanche']['dessert'];
                                         break;
                                 }
-                                
+
                                 $ref=$index;
                                 echo "<div class='reservation'>",
                                             "<div class='donnees'>",
-                                            // $reservation['jourReservation']
                                                 "<div class='jour donnee'>",
+                                                /* Ici on a recréé un formulaire avec un submit -> on renvoie vers traitement php pour que les données soient traitées, et on revoie vers l'action changerJour (l'action à effectuer dans notre cas), et on récupère le jour voulu (grâce à ref) */
+                                                "<form action='traitement.php?action=changerJour&ref=$index'method='post'>",
                                                     "<select name='jour-reservation' id='jour-reservation'>",
-                                                    "<option value='`{$reservation['jourReservation']}`' name='`{$reservation['jourReservation']}`'>" . $reservation['jourReservation'] ."</option>",
-                                                    "<option value='lundi' name='lundi'>Lundi</option>",
-                                                    "<option value='mardi' name='mardi'>Mardi</option>",
-                                                    "<option value='mercredi' name='mercredi'>Mercredi</option>",
-                                                    "<option value='jeudi' name='jeudi'>Jeudi</option>",
-                                                    "<option value='vendredi' name='vendredi'>Vendredi</option>",
-                                                    "<option value='samedi' name='samedi'>Samedi</option>",
-                                                    "<option value='dimanche' name='dimanche'>Dimanche</option>",
+                                                        "<option value='`{$reservation['jourReservation']}`' name='`{$reservation['jourReservation']}`'>" . $reservation['jourReservation'] ."</option>",
+                                                        "<option value='lundi' name='lundi'>Lundi</option>",
+                                                        "<option value='mardi' name='mardi'>Mardi</option>",
+                                                        "<option value='mercredi' name='mercredi'>Mercredi</option>",
+                                                        "<option value='jeudi' name='jeudi'>Jeudi</option>",
+                                                        "<option value='vendredi' name='vendredi'>Vendredi</option>",
+                                                        "<option value='samedi' name='samedi'>Samedi</option>",
+                                                        "<option value='dimanche' name='dimanche'>Dimanche</option>",
                                                     "</select>",
+                                                    "<input name='submit' type='submit' value='valider Jour'>",
+                                                "</form>",
                                                 "</div>",
                                                 "<div class='personnes donnee'>",
                                                 "<a href='traitement.php?action=baisserNombrePersonne&ref=$index'>",
