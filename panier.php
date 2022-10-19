@@ -16,8 +16,10 @@
 </head>
 <body>
     <div id="container-page">
-            <h1> Le Quai des Machines </h1>    
-            <h3>14 Bd Léon Bureau 44200 Nantes</h3>
+            <div id="title">
+                <h1> Le Quai des Machines </h1>    
+                <h3>14 Bd Léon Bureau 44200 Nantes</h3>
+            </div>
             <?php 
               if(isset($_SESSION['reservations']) || !empty($_SESSION['reservations'])){
                echo
@@ -27,7 +29,7 @@
                 "<p class='confirmation-reservation-p'>Merci pour votre réservation</p>",
                "</div>",
                 "<a id='retour-index' href='index.php'>",
-                    "<i class='fa-solid fa-rotate-left'></i><p>Réserver une autre table</p>",
+                    "<p>Réserver une autre table</p>",
                 "</a>"; 
             } ?>
             <div id="container-reservation">
@@ -81,20 +83,20 @@
                                 echo "<div class='reservation'>",
                                             "<div class='donnees'>",
                                                 "<div class='jour donnee'>",
-                                                /* Ici on a recréé un formulaire avec un submit -> on renvoie vers traitement php pour que les données soient traitées, et on revoie vers l'action changerJour (l'action à effectuer dans notre cas), et on récupère le jour voulu (grâce à ref) */
-                                                "<form action='traitement.php?action=changerJour&ref=$index'method='post'>",
-                                                    "<select name='jour-reservation' id='jour-reservation'>",
-                                                        "<option value='`{$reservation['jourReservation']}`' name='`{$reservation['jourReservation']}`'>" . $reservation['jourReservation'] ."</option>",
-                                                        "<option value='lundi' name='lundi'>Lundi</option>",
-                                                        "<option value='mardi' name='mardi'>Mardi</option>",
-                                                        "<option value='mercredi' name='mercredi'>Mercredi</option>",
-                                                        "<option value='jeudi' name='jeudi'>Jeudi</option>",
-                                                        "<option value='vendredi' name='vendredi'>Vendredi</option>",
-                                                        "<option value='samedi' name='samedi'>Samedi</option>",
-                                                        "<option value='dimanche' name='dimanche'>Dimanche</option>",
-                                                    "</select>",
-                                                    "<input name='submit' type='submit' value='valider Jour'>",
-                                                "</form>",
+                                                    /* Ici on a recréé un formulaire avec un submit -> on renvoie vers traitement php pour que les données soient traitées, et on revoie vers l'action changerJour (l'action à effectuer dans notre cas), et on récupère le jour voulu (grâce à ref) */
+                                                    "<form action='traitement.php?action=changerJour&ref=$index'method='post'>",
+                                                        "<select name='jour-reservation' id='jour-reservation'>",
+                                                            "<option value='`{$reservation['jourReservation']}`' name='`{$reservation['jourReservation']}`'>" . $reservation['jourReservation'] ."</option>",
+                                                            "<option value='lundi' name='lundi'>Lundi</option>",
+                                                            "<option value='mardi' name='mardi'>Mardi</option>",
+                                                            "<option value='mercredi' name='mercredi'>Mercredi</option>",
+                                                            "<option value='jeudi' name='jeudi'>Jeudi</option>",
+                                                            "<option value='vendredi' name='vendredi'>Vendredi</option>",
+                                                            "<option value='samedi' name='samedi'>Samedi</option>",
+                                                            "<option value='dimanche' name='dimanche'>Dimanche</option>",
+                                                        "</select>",
+                                                        "<input id='valider-jour' name='submit' type='submit' value='valider'>",
+                                                    "</form>",
                                                 "</div>",
                                                 "<div class='personnes donnee'>",
                                                 "<a href='traitement.php?action=baisserNombrePersonne&ref=$index'>",
@@ -125,7 +127,6 @@
             </div>
     
             <a id="retour-index" href="index.php">
-                <i class="fa-solid fa-rotate-left"></i>
                 <p>Retourner à la page d'accueil</p>
             </a> 
 
