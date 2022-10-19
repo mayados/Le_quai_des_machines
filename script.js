@@ -46,8 +46,11 @@ function AfficherCreneauMidi() {
   soirHeures.removeAttribute("name","creneau-heure");
 }
 
-let jourReservation = document.getElementById('jourReservation');
-jourReservation.setAttribute('selected', 'selected');
+// let jourReservation = document.getElementsByClassName('jourReservation');
+// jourReservation.setAttribute('selected', 'selected');
+// array.forEach(element => {
+	
+// });
 
 //Bouton "scroll"
 let mybutton = document.getElementById("myScroll");
@@ -94,3 +97,8 @@ darkMode.addEventListener('change', () => {
   /* S'il y a bien des changements, les éléments du body concernés basculent en class "dark" (voir css pour les éléments ciblés) */
   document.body.classList.toggle('dark');
 });
+
+
+
+
+
