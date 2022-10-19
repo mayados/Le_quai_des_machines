@@ -99,6 +99,15 @@ switch ($action) {
         unset($_SESSION["reservations"][$ref]);
         header("Location:panier.php");
         break;
+
+    case "changerJour":
+        /* On stocke dans $jour la nouvelle valeur soumise dans le formulaire avec "valider". On doit filtrer par mesure de sécurité car c'est un nouveau formulaire*/
+        $jour = filter_input(INPUT_POST,"jour-reservation",FILTER_SANITIZE_SPECIAL_CHARS);
+        /* On dit que le jour contenu initialement est à présent égal au nouveau jour sélectionné dans le nouveau formulaire*/
+        $_SESSION["reservations"][$ref]["jourReservation"] = $jour;
+        var_dump($_POST['jour-reservation']);
+        header("Location:panier.php"); 
+    break;
 }
 
 ?>
