@@ -592,7 +592,7 @@ li.on .content {
 /****** FORMULAIRE DE CONTACT *******/
 
 #formulaire {
-    background-image: url('/img/elephant.png');
+    background-image: url('../img/elephant.png');
     background-repeat: no-repeat;
     background-size: cover;
 
