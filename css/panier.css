@@ -82,12 +82,34 @@ h3 {
 }
 /********** CONTAINER PRINCIPAL POUR TOUTES LES RESERVATIONS***********/
 #container-reservation {
-    width: 100%;
+
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 70px;
 }
+
+ .lien{
+    background-color: var(--bleu);
+    border: 1px solid white;
+    border-radius: 10px 1px 10px 1px;
+    font-size: 1.1rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+} 
+
+.container-lien{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 /************CONTAINER POUR CHAQUE RESERVATION ****************/
 .reservation {
     background-color: rgba(255, 255, 255, 0.4);
