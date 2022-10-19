@@ -1,0 +1,4 @@
+TO DO :
+
+- Régler le soucis dans panier.php -> afficher le bon menu du jour quand on change le jour de réservation
+- Voir bug de l'image de fond de contact
