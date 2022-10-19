@@ -23,14 +23,16 @@
             <?php 
               if(isset($_SESSION['reservations']) || !empty($_SESSION['reservations'])){
                echo
-               "<div class='confirmation-reservation'>",
-                "<p class='confirmation-reservation-p'>Votre réservation est confirmée !</p>",
-                "<img class='validate' src='./img/validate.png' alt='validate icone' width='auto' height='60px'>",
-                "<p class='confirmation-reservation-p'>Merci pour votre réservation</p>",
-               "</div>",
-                "<a id='retour-index' href='index.php'>",
-                    "<p>Réserver une autre table</p>",
-                "</a>"; 
+                "<div class='confirmation-reservation'>",
+                    "<p class='confirmation-reservation-p'>Votre réservation est confirmée !</p>",
+                    "<img class='validate' src='./img/validate.png' alt='validate icone' width='auto' height='60px'>",
+                    "<p class='confirmation-reservation-p'>Merci pour votre réservation</p>",
+                "</div>",
+                "<div class='container-lien'>",
+                    "<a class='lien' href='index.php'>",
+                        "<p id='test'>Réserver une autre table</p>",
+                    "</a>",
+                "</div>";
             } ?>
             <div id="container-reservation">
                 <?php 
@@ -125,10 +127,12 @@
                         }
                     ?>
             </div>
-    
-            <a id="retour-index" href="index.php">
-                <p>Retourner à la page d'accueil</p>
-            </a> 
+            <div class="container-lien">
+                <a class='lien' href="index.php">
+                    <p>Retourner à la page d'accueil</p>
+                </a>                 
+            </div>
+
     </div>
    <script src ="./reservation.js"></script>
 </body>
