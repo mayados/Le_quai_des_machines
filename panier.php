@@ -84,7 +84,7 @@
                                                 /* Ici on a recréé un formulaire avec un submit -> on renvoie vers traitement php pour que les données soient traitées, et on revoie vers l'action changerJour (l'action à effectuer dans notre cas), et on récupère le jour voulu (grâce à ref) */
                                                 "<form action='traitement.php?action=changerJour&ref=$index'method='post'>",
                                                     "<select name='jour-reservation' id='jour-reservation'>",
-                                                        "<option value='`{$reservation['jourReservation']}`' name='`{$reservation['jourReservation']}`'>" . $reservation['jourReservation'] ."</option>",
+                                                        "<option style='display : none' id='jourReservation'value=`{$reservation['jourReservation']}` name='`{$reservation['jourReservation']}`'>" . $reservation['jourReservation'] ."</option>",
                                                         "<option value='lundi' name='lundi'>Lundi</option>",
                                                         "<option value='mardi' name='mardi'>Mardi</option>",
                                                         "<option value='mercredi' name='mercredi'>Mercredi</option>",
@@ -114,8 +114,8 @@
                                                     "<h5 class='title-menu'>Dessert :</h5>",
                                                     "<p class='content-menu'>".$_SESSION['Dessert']."</p>",
                                             "</div>",
-                                        "</div>",
-                                        "<a class='sup-reservation' href='traitement.php?action=suppprimerReservation&ref=$index'><p>Supprimer la réservation</p></a>",
+                                      "</div>",
+                                          "<a class='sup-reservation' href='traitement.php?action=suppprimerReservation&ref=$index'><p>Supprimer la réservation</p></a>",
                                     "</div>";
                             }
                             echo 
@@ -128,7 +128,6 @@
                 <i class="fa-solid fa-rotate-left"></i>
                 <p>Retourner à la page d'accueil</p>
             </a> 
-
     </div>
 </body>
 </html>

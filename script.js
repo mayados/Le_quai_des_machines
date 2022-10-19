@@ -45,7 +45,6 @@ function AfficherCreneauMidi() {
   midiHeures.setAttribute("name","creneau-heure");
   soirHeures.removeAttribute("name","creneau-heure");
 }
-            
 
 //Bouton "scroll"
 let mybutton = document.getElementById("myScroll");
