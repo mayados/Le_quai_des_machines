@@ -46,6 +46,9 @@ function AfficherCreneauMidi() {
   soirHeures.removeAttribute("name","creneau-heure");
 }
 
+let jourReservation = document.getElementById('jourReservation');
+jourReservation.setAttribute('selected', 'selected');
+
 //Bouton "scroll"
 let mybutton = document.getElementById("myScroll");
 
