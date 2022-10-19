@@ -86,14 +86,14 @@
                                                     /* Ici on a recréé un formulaire avec un submit -> on renvoie vers traitement php pour que les données soient traitées, et on revoie vers l'action changerJour (l'action à effectuer dans notre cas), et on récupère le jour voulu (grâce à ref) */
                                                     "<form action='traitement.php?action=changerJour&ref=$index'method='post'>",
                                                         "<select name='jour-reservation' id='jour-reservation'>",
-                                                            "<option style='display : none' id='jourReservation'value=`{$reservation['jourReservation']}` name='`{$reservation['jourReservation']}`'>" . $reservation['jourReservation'] ."</option>",
-                                                            "<option value='lundi' name='lundi'>Lundi</option>",
-                                                            "<option value='mardi' name='mardi'>Mardi</option>",
-                                                            "<option value='mercredi' name='mercredi'>Mercredi</option>",
-                                                            "<option value='jeudi' name='jeudi'>Jeudi</option>",
-                                                            "<option value='vendredi' name='vendredi'>Vendredi</option>",
-                                                            "<option value='samedi' name='samedi'>Samedi</option>",
-                                                            "<option value='dimanche' name='dimanche'>Dimanche</option>",
+                                                            "<option class='jour-semaine' style='display : none' id='jourReservation'value=`{$reservation['jourReservation']}` name='`{$reservation['jourReservation']}`'>" . $reservation['jourReservation'] ."</option>",
+                                                            "<option class='jour-semaine' value='Lundi' name='lundi'>Lundi</option>",
+                                                            "<option class='jour-semaine' value='Mardi' name='mardi'>Mardi</option>",
+                                                            "<option class='jour-semaine' value='Mercredi' name='mercredi'>Mercredi</option>",
+                                                            "<option class='jour-semaine' value='Jeudi' name='jeudi'>Jeudi</option>",
+                                                            "<option class='jour-semaine' value='Vendredi' name='vendredi'>Vendredi</option>",
+                                                            "<option class='jour-semaine' value='Samedi' name='samedi'>Samedi</option>",
+                                                            "<option class='jour-semaine' value='Dimanche' name='dimanche'>Dimanche</option>",
                                                         "</select>",
                                                         "<input id='valider-jour' name='submit' type='submit' value='valider'>",
                                                     "</form>",
@@ -130,5 +130,6 @@
                 <p>Retourner à la page d'accueil</p>
             </a> 
     </div>
+   <script src ="./reservation.js"></script>
 </body>
 </html>
