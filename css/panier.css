@@ -27,6 +27,9 @@ a {
 }
 
 #container-page {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     padding-top: 2%;
     width: 100%;
     text-align: center;
@@ -80,8 +83,10 @@ h3 {
 /********** CONTAINER PRINCIPAL POUR TOUTES LES RESERVATIONS***********/
 #container-reservation {
     width: 100%;
-    padding: 20px 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
 }
 /************CONTAINER POUR CHAQUE RESERVATION ****************/
 .reservation {
@@ -95,7 +100,7 @@ h3 {
     height: 600px;
     margin: 0 auto;
     padding: 5%;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     border-radius: 50px;
 }
 /************** DIV DONNEES*******************/
@@ -115,6 +120,29 @@ h3 {
 .donnee:hover {
     background-color: rgb(196, 2, 47);
 }
+
+.donnee:hover  form #valider-jour{
+    background-color: var(--rose);    
+}
+
+.donnee form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.donnee form #jour-reservation{
+    border: 2px solid rgb(196, 2, 47);
+    border-radius: 4px;
+    background-color: rgb(192, 192, 192);
+}
+
+.donnee form #valider-jour{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(196, 2, 47);
+}
+
 .jour, .heure {
     width: 150px;
     height: 50px;
