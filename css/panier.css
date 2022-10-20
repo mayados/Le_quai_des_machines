@@ -12,14 +12,16 @@
 }
 
 /*****************AFFICHAGE SI PAS DE RESERVATION ********************/
-#container-no{
+#container-no {
     margin-top: 40%;
 }
-#no{
+
+#no {
     font-size: 2rem;
     color: rgb(253, 253, 253);
     text-shadow: 1px 1px 1px black;
 }
+
 /***************** AFFICHAGE SI RESERVATION *****************/
 a {
     text-decoration: none;
@@ -34,14 +36,15 @@ a {
     width: 100%;
     text-align: center;
     height: 100%;
-    color: white; 
+    color: white;
     background-image: url("../img/tables.jpg");
     background-repeat: repeat;
     background-position: center;
-   /* L'image s'adapte pour couvrir son container */
+    /* L'image s'adapte pour couvrir son container */
 }
 
-h4#menu, h5 {
+h4#menu,
+h5 {
     color: var(--rose);
 }
 
@@ -51,7 +54,8 @@ h4#menu, h5 {
     font-weight: bold;
 }
 
-h1, h3 {
+h1,
+h3 {
     color: white;
     text-shadow: 1px 1px 1px var(--bleu);
 }
@@ -80,6 +84,7 @@ h3 {
 .validate {
     margin: 15px 0px;
 }
+
 /********** CONTAINER PRINCIPAL POUR TOUTES LES RESERVATIONS***********/
 #container-reservation {
 
@@ -91,7 +96,7 @@ h3 {
     gap: 70px;
 }
 
- .lien{
+.lien {
     background-color: var(--bleu);
     border: 1px solid white;
     border-radius: 10px 1px 10px 1px;
@@ -101,9 +106,9 @@ h3 {
     justify-content: center;
     align-items: center;
     width: 200px;
-} 
+}
 
-.container-lien{
+.container-lien {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,12 +130,14 @@ h3 {
     /* margin-top: 5%; */
     border-radius: 50px;
 }
+
 /************** DIV DONNEES*******************/
 .donnees {
     display: flex;
     flex-direction: row;
     gap: 2px;
 }
+
 .donnee {
     background-color: rgb(231, 4, 57, 0.8);
     text-align: center;
@@ -139,53 +146,61 @@ h3 {
     align-items: center;
     gap: 5px;
 }
+
 .donnee:hover {
     background-color: rgb(196, 2, 47);
 }
 
-.donnee:hover  form #valider-jour{
-    background-color: var(--rose);    
+.donnee:hover form #valider-jour {
+    background-color: var(--rose);
 }
 
-.donnee form{
+.donnee form {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.donnee form #jour-reservation{
+.donnee form #jour-reservation {
     border: 2px solid rgb(196, 2, 47);
     border-radius: 4px;
     background-color: rgb(192, 192, 192);
 }
 
-.donnee form #valider-jour{
+.donnee form #valider-jour {
     border: none;
     border-radius: 5px;
     background-color: rgb(196, 2, 47);
 }
 
-.jour, .heure {
+.jour,
+.heure {
     width: 150px;
     height: 50px;
 }
-.personnes, .creneau {
+
+.personnes,
+.creneau {
     width: 140px;
     height: 50px;
 }
+
 .jour {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
 .heure {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 /************** DIV MENU-JOUR ****************/
-h4{
+h4 {
     font-size: 1.6rem;
 }
-.title-menu{
+
+.title-menu {
     font-size: 1.3rem;
 }
 
@@ -195,6 +210,7 @@ h4{
     flex-direction: column;
     gap: 20px;
 }
+
 .elements-menu {
     display: flex;
     flex-direction: column;
@@ -202,6 +218,7 @@ h4{
     align-items: center;
     gap: 10px;
 }
+
 .sup-reservation {
     position: absolute;
     bottom: 20px;
@@ -214,14 +231,15 @@ h4{
     align-items: center;
     padding: 1.2rem;
 }
+
 /*Responsive Tablette*/
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     .reservation {
         width: 550px;
         height: 550px;
     }
-    
-    .donnees .personnes{
+
+    .donnees .personnes {
         font-size: 0.8rem;
     }
 
@@ -229,9 +247,129 @@ h4{
     .heure {
         width: 130px;
         height: 50px;
-   }
-    .personnes, .creneau {
+    }
+
+    .personnes,
+    .creneau {
         width: 120px;
         height: 50px;
-   }
-} 
+    }
+}
+
+/* Responsive menu de navigation, evenements, galerie + formulaire de contact */
+
+/*Tablette*/
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    header {
+        position: relative;
+    }
+
+    #menu-navigation {
+        gap: 20px;
+    }
+
+    #items-menu .barre {
+        display: none;
+    }
+
+    #items-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu-navigation {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+
+    #container-encarts {
+        flex-wrap: wrap;
+        width: 75%;
+        gap: 50px;
+    }
+
+    #fleche {
+        bottom: -9%;
+    }
+
+    li .button {
+        width: 550px;
+    }
+
+    li .content {
+        width: 550px;
+    }
+
+    #flex-menu {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #evenements {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        gap: 50px;
+    }
+
+    .google-iframe {
+        width: 100%;
+        margin-bottom: 15%;
+    }
+
+    .google-iframe iframe {
+        height: 150%;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+
+    .formulaire-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    #container-encarts {
+        flex-wrap: wrap;
+        width: 75%;
+        gap: 50px;
+    }
+
+
+    #evenements {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        gap: 50px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .reservation {
+        /* width: 350px;
+        height: 600px; */
+        width: 80%;
+        height: 670px;
+    }
+
+    .donnees {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .jour,
+    .heure,
+    .personnes,
+    .creneau {
+        width: 70%;
+        height: 50px;
+    }
+
+}
