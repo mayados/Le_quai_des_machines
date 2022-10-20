@@ -13,7 +13,7 @@
 
 /*****************AFFICHAGE SI PAS DE RESERVATION ********************/
 #container-no {
-    margin-top: 40%;
+    height: 100vh;
 }
 
 #no {
@@ -21,6 +21,7 @@
     color: rgb(253, 253, 253);
     text-shadow: 1px 1px 1px black;
 }
+
 
 /***************** AFFICHAGE SI RESERVATION *****************/
 a {
@@ -164,7 +165,7 @@ h3 {
 .donnee form #jour-reservation {
     border: 2px solid rgb(196, 2, 47);
     border-radius: 4px;
-    background-color: rgb(192, 192, 192);
+    background-color: white;
 }
 
 .donnee form #valider-jour {
