@@ -29,7 +29,7 @@
                     "<p class='confirmation-reservation-p'>Merci pour votre réservation</p>",
                 "</div>",
                 "<div class='container-lien'>",
-                    "<a class='lien' href='index.php'>",
+                    "<a class='lien' href='index.php#formulaire'>",
                         "<p id='test'>Réserver une autre table</p>",
                     "</a>",
                 "</div>";
