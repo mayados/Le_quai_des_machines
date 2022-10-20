@@ -170,7 +170,10 @@ h3 {
 .donnee form #valider-jour {
     border: none;
     border-radius: 5px;
-    background-color: rgb(196, 2, 47);
+    background-color: white;
+    font-weight: bold;
+    padding: 2.5%;
+    cursor: pointer;
 }
 
 .jour,
@@ -355,7 +358,7 @@ h4 {
         /* width: 350px;
         height: 600px; */
         width: 80%;
-        height: 670px;
+        height: 700px;
     }
 
     .donnees {
@@ -369,7 +372,26 @@ h4 {
     .personnes,
     .creneau {
         width: 70%;
-        height: 50px;
+        height: 60px;
+        border-radius: 10px;
     }
 
+    .content-menu {
+        font-size: 1.1rem;
+    }
+
+    h4#menu {
+        font-size: 1.7rem;
+    }
+
+    p.content-menu {
+        font-size: 1.2rem;
+    }
+
+    .sup-reservation {
+        width: 50%;
+        background-color: rgb(231, 4, 57);
+        padding: 1.5rem;
+        bottom: 20px;
+    }
 }
