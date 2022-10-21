@@ -403,16 +403,16 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                     <form action="traitement.php?action=ajouterProduit" method="post">
 
                         <label for="nom">Nom :</label>
-                        <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
 
                         <label for="prenom">Prénom :</label>
-                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
 
                         <label for="telephone">Numéro de téléphone :</label>
-                        <input type="number" id="telephone" name="telephone" placeholder="Numéro de téléphone">
+                        <input type="number" id="telephone" name="telephone" placeholder="Numéro de téléphone" required>
 
                         <label for="nombrePersonne">Nombre de personnes :</label>
-                        <input type="number" id="nombrePersonne" name="nombrePersonne" placeholder="Nombre de personnes">
+                        <input type="number" id="nombrePersonne" name="nombrePersonne" placeholder="Nombre de personnes" required>
 
                         <div id="form-reservation">           
 
@@ -459,7 +459,8 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                         </div>    
 
                         <label for="mail">Adresse mail :</label>
-                        <input type="text" id="mail" name="mail" placeholder="votre@adresse.mail">
+                        <!-- pattern ici permet de définir le format demandé pour une adresse mail (ici l'utilisateur doit saisir une valeur avec @ pour que ce soit valide) -->
+                        <input type="text" id="mail" name="mail" placeholder="votre@adresse.mail" pattern=".+@.+" required>
 
 
                         <input name="submit" type="submit" value="Envoyer">
