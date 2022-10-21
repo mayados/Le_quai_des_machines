@@ -88,7 +88,7 @@
                                                     /* Ici on a recréé un formulaire avec un submit -> on renvoie vers traitement php pour que les données soient traitées, et on revoie vers l'action changerJour (l'action à effectuer dans notre cas), et on récupère le jour voulu (grâce à ref) */
                                                     "<form action='traitement.php?action=changerJour&ref=$index'method='post'>",
                                                         "<select name='jour-reservation' id='jour-reservation'>",
-                                                            "<option selected class='jour-semaine' style='display : none' id='jourReservation'value=`{$reservation['jourReservation']}` name='`{$reservation['jourReservation']}`'>" . $reservation['jourReservation'] ."</option>",
+                                                            "<option selected class='jour-semaine' style='display : none' id='jourReservation'value=`{$reservation['jourReservation']}` name='`{$reservation['jourReservation']}`'>" . ucwords($reservation['jourReservation']) ."</option>",
                                                             "<option class='jour-semaine' value='lundi' name='lundi'>Lundi</option>",
                                                             "<option class='jour-semaine' value='mardi' name='mardi'>Mardi</option>",
                                                             "<option class='jour-semaine' value='mercredi' name='mercredi'>Mercredi</option>",
