@@ -1042,4 +1042,13 @@ footer li a i:hover {
     .contact-container {
         width: 80%;
     }
+
+    .video iframe{
+        width: 350px;
+    }
+
+    #myScroll {
+        right: 5px;
+    }
+
 }
