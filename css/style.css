@@ -648,6 +648,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: small;
 }
 
 input[type=submit]:hover {
@@ -657,6 +658,34 @@ input[type=submit]:hover {
 textarea {
     height: 110px
 }
+
+#btn-container{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-reservation{
+    height: 46px;
+    width: 120px;
+    background-color: var(--bleu);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-reservation a {
+    color: white;
+    font-size: small;
+}
+
+.fa-solid {
+    color: white;
+}
+
+
 
 
 

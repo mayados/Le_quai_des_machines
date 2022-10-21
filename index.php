@@ -462,8 +462,15 @@ $_SESSION['menuSemaine'][] = $menuSemaine;
                         <!-- pattern ici permet de définir le format demandé pour une adresse mail (ici l'utilisateur doit saisir une valeur avec @ pour que ce soit valide) -->
                         <input type="text" id="mail" name="mail" placeholder="votre@adresse.mail" pattern=".+@.+" required>
 
+                        <div id="btn-container">
+                            <input name="submit" type="submit" value="Envoyer">
+                            <div class="btn-reservation">
+                                <i class="fa-solid fa-utensils">&nbsp;&nbsp;</i>
+                                <a href="./panier.php">Réservations</a>                            
+                            </div>                            
+                        </div>
 
-                        <input name="submit" type="submit" value="Envoyer">
+
 
                     </form>
                 </div>
