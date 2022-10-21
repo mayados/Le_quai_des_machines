@@ -97,6 +97,8 @@ switch ($action) {
 
     case "suppprimerReservation":
         unset($_SESSION["reservations"][$ref]);
+        $_SESSION["message"] =
+        "<div id='nb-personnes'><p>La réservation a bien été supprimée</p></div>";
         header("Location:panier.php");
         break;
 
